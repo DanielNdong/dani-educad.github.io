@@ -634,6 +634,7 @@ main {
     }
     .services__items__wrapper .services__items .services__description {
         width: 100%;
+        height: 150px;
     }
     .services__items__wrapper .services__items .services__description p {
         margin: 1rem 0;
