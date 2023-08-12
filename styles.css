@@ -629,7 +629,7 @@ main {
         max-width: 1000px;
         margin: auto;
     }
-    .item1, .item2 {
+     .services__items.item1,  .services__items.item2 {
         width: 50%;
     }
     .services__items__wrapper .services__items .services__description {
