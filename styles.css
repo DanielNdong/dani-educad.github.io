@@ -629,7 +629,7 @@ main {
         max-width: 1000px;
         margin: auto;
     }
-    .item1, item2 {
+    .item1, .item2 {
         width: 50%;
     }
     .services__items__wrapper .services__items .services__description {
@@ -638,6 +638,7 @@ main {
     }
     .services__items__wrapper .services__items .services__description p {
         margin: 1rem 0;
+        text-align: start;
     }
     .services__description li {
         font-size: 13px;
