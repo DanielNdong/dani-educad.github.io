@@ -561,7 +561,7 @@ main {
         padding: 5rem 25px;
         flex-direction: row;
         justify-content: center;
-        gap: 20px;
+        gap: 50px;
     }
     .presentation__title {
         width: 500px;
