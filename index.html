@@ -176,16 +176,19 @@
                 <span>Ponte en contacto con nosotros y consultanos lo que quieras</span>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem distinctio molestias ipsam libero excepturi, voluptatibus possimus placeat voluptatum nobis porro, odit quasi rerum error soluta fugit vero temporibus ea unde?</p>
             </div>
-            <form>
+            <form target="_blank" action="https://formsubmit.co/aquilinondongbiang@gmail.com" method="POST">
                 <label for="correo">
                     Ingresa tu correo
-                    <input type="text" id="correo" name="correo" placeholder="example@mail.com">
+                    <input type="text" class="form__input" id="correo" name="correo" placeholder="example@mail.com">
                 </label>
                 <label for="asunto">
                     Asunto
-                    <textarea name="asunto" id="asunto" rows="6"></textarea>
+                    <textarea class="form__input" id="asunto" name="asunto" rows="6"></textarea>
                 </label>
                 <button type="submit">Enviar</button>
+                <span class="form__warning"
+            >Avís: Hi ha camps del formulari per omplir.</span
+          >
             </form>
         </section>
     </main>
@@ -237,6 +240,74 @@
             </ul>
         </div> -->
     </footer>
+    <script>
+function sendEmail(messageData) {
+  console.log(messageData);
+  let dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+
+  const mailBody = `
+    <h3>Informació del contacte</h3>
+      <ul>
+        <li>Nom: ${messageData.name}</li>
+        <li>Empresa: ${messageData.company}</li>
+        <li>Email: ${messageData.email}</li>
+        <li>Telèfon: ${messageData.mobile}</li>
+        <li>Població: ${messageData.location}</li>
+        <li>Codi postal: ${messageData.zip}</li>
+        <li>Data contacte: ${new Date().toLocaleDateString('es-ES', dateOptions)}</li>
+      </ul>
+    <h3>Comentaris:</h3>
+    <p>${messageData.comments}</p>
+ `;
+
+  Email.send({
+    Host: "smtp.gmail.com",
+    Username: "serverven3@gmail.com",
+    Password: "Venersol1234",
+    To: "host@venersol.com.mialias.net",
+    From: "serverven3@gmail.com",
+    Subject: `Sol·licitud de: ${messageData.name}`,
+    Body: mailBody,
+  })
+    .then((response) => alert("Sol·licitud enviada."))
+    .catch((error) => {
+      alert(
+        "Hi ha hagut un error al enviar la sol·licitud. Prova-ho un altre cop."
+      );
+    });
+    clearForm()
+}
+
+function isFormValid() {
+  const inputElements = document.querySelectorAll(".form__input");
+  const warningElement = document.querySelector(".form__warning");
+
+  const messageData = {};
+  let isFormValid = true;
+
+  inputElements.forEach((input) => {
+    if (input.value) {
+      messageData[`${input.name}`] = input.value;
+    } else {
+      if (input.name !== "company") {
+        isFormValid = false;
+        return (warningElement.style.visibility = "visible");
+      }
+    }
+  });
+
+  if (isFormValid) {
+    warningElement.style.visibility = "hidden";
+    sendEmail(messageData);
+  }
+}
+
+function clearForm(){
+  document.querySelectorAll(".form__input").forEach((input)=>{
+    input.value="";
+  })
+}
+</script>
     <script src="./scripts.js"></script>
 </body>
 </html>
