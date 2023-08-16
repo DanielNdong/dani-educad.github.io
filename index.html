@@ -241,8 +241,8 @@
         </div> -->
     </footer>
     <script>
-         let correo = document.querySelector('#correo');
-         let asunto = document.querySelector('#asunto');
+         let correo = document.querySelector('#correo').value;
+         let asunto = document.querySelector('#asunto').value;
          let warning = document.querySelector('.form__warning');
         fetch('https://formsubmit.co/aquilinondongbiang@gmail.com', {
           method: 'POST',
