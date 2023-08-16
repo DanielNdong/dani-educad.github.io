@@ -176,7 +176,7 @@
                 <span>Ponte en contacto con nosotros y consultanos lo que quieras</span>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem distinctio molestias ipsam libero excepturi, voluptatibus possimus placeat voluptatum nobis porro, odit quasi rerum error soluta fugit vero temporibus ea unde?</p>
             </div>
-            <form target="_blank" action="https://formsubmit.co/aquilinondongbiang@gmail.com" method="POST">
+            <form target="_blank" method="POST">
                 <label for="correo">
                     Ingresa tu correo
                     <input type="text" class="form__input" id="correo" name="correo" placeholder="example@mail.com">
@@ -241,6 +241,33 @@
         </div> -->
     </footer>
     <script>
+         let correo = document.querySelector('#correo');
+         let asunto = document.querySelector('#asunto');
+         let warning = document.querySelector('.form__warning');
+        fetch('https://formsubmit.co/aquilinondongbiang@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            email: correo,
+            message:asunto
+          })
+        })
+        .then(response => response.json())
+        .then(data => {
+          // Aquí puedes manejar la respuesta de la API
+          console.log(data);
+            warning.style.color = 'green';
+        })
+        .catch(error => {
+          // Aquí puedes manejar errores
+          console.error(error);
+             warning.style.color = 'red';
+        });
+
+        
 function sendEmail(messageData) {
   console.log(messageData);
   let dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -272,7 +299,7 @@ function sendEmail(messageData) {
     .then((response) => alert("Sol·licitud enviada."))
     .catch((error) => {
       alert(
-        "Hi ha hagut un error al enviar la sol·licitud. Prova-ho un altre cop."
+        "Hubo un problema al enviar la solicitud. Intentalo de nuevo."
       );
     });
     clearForm()
@@ -308,6 +335,6 @@ function clearForm(){
   })
 }
 </script>
-    <script src="./scripts.js"></script>
+<script src="./scripts.js"></script>
 </body>
 </html>
