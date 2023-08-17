@@ -176,7 +176,19 @@
                 <span>Ponte en contacto con nosotros y consultanos lo que quieras</span>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem distinctio molestias ipsam libero excepturi, voluptatibus possimus placeat voluptatum nobis porro, odit quasi rerum error soluta fugit vero temporibus ea unde?</p>
             </div>
-            <form  method="POST">
+             <form id="my-formcarry">
+                  <label for="name">Nombre/Empresa</label>
+                  <input type="text" id="name" name="firstName" />
+            
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" />
+                 
+                  <label for="message">Mensaje</label>
+                  <textarea id="message" name="message"></textarea>
+                 
+                  <button type="submit">Enviar</button>
+                </form>
+            <!-- <form  method="POST">
                 <label for="correo">
                     Ingresa tu correo
                     <input type="text" class="form__input" id="correo" name="correo" placeholder="example@mail.com">
@@ -189,7 +201,7 @@
                 <span class="form__warning"
             >Avís: Hi ha camps del formulari per omplir.</span
           >
-            </form>
+            </form> -->
         </section>
     </main>
 
@@ -240,100 +252,31 @@
             </ul>
         </div> -->
     </footer>
-    <script>
-         let correo = document.querySelector('#correo').value;
-         let asunto = document.querySelector('#asunto').value;
-         let warning = document.querySelector('.form__warning');
-        fetch('https://formsubmit.co/ajax/aquilinondongbiang@gmail.com', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-          },
-          body: JSON.stringify({
-            email: 'aquilinondongbiang@gmail.com',
-            message: 'pEUQE ÑO mENSAje',
-          })
-        })
-        .then(response => response.json())
-        .then(data => {
-          // Aquí puedes manejar la respuesta de la API
-          console.log(data);
-            warning.style.color = 'green';
-        })
-        .catch(error => {
-          // Aquí puedes manejar errores
-          console.error(error);
-             warning.style.color = 'red';
-        });
-
-        
-function sendEmail(messageData) {
-  console.log(messageData);
-  let dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
-
-  const mailBody = `
-    <h3>Informació del contacte</h3>
-      <ul>
-        <li>Nom: ${messageData.name}</li>
-        <li>Empresa: ${messageData.company}</li>
-        <li>Email: ${messageData.email}</li>
-        <li>Telèfon: ${messageData.mobile}</li>
-        <li>Població: ${messageData.location}</li>
-        <li>Codi postal: ${messageData.zip}</li>
-        <li>Data contacte: ${new Date().toLocaleDateString('es-ES', dateOptions)}</li>
-      </ul>
-    <h3>Comentaris:</h3>
-    <p>${messageData.comments}</p>
- `;
-
-  Email.send({
-    Host: "smtp.gmail.com",
-    Username: "serverven3@gmail.com",
-    Password: "Venersol1234",
-    To: "host@venersol.com.mialias.net",
-    From: "serverven3@gmail.com",
-    Subject: `Sol·licitud de: ${messageData.name}`,
-    Body: mailBody,
-  })
-    .then((response) => alert("Sol·licitud enviada."))
-    .catch((error) => {
-      alert(
-        "Hubo un problema al enviar la solicitud. Intentalo de nuevo."
-      );
-    });
-    clearForm()
-}
-
-function isFormValid() {
-  const inputElements = document.querySelectorAll(".form__input");
-  const warningElement = document.querySelector(".form__warning");
-
-  const messageData = {};
-  let isFormValid = true;
-
-  inputElements.forEach((input) => {
-    if (input.value) {
-      messageData[`${input.name}`] = input.value;
-    } else {
-      if (input.name !== "company") {
-        isFormValid = false;
-        return (warningElement.style.visibility = "visible");
-      }
+<script src="https://carrier.formcarry.com/js/v1.js"></script>
+<script>
+  formcarry({
+    // replace this "you-form-id-in-formcarry" with your form id that you can get it from the dashboard.
+    form: "9S9V-OwaAb",
+    // id or class name of the form element, only form element allowed
+    // works with css selectors
+    // # <= for id
+    // . <= for class
+   element: "#my-formcarry",
+    extraData: {
+      // add whatever you want
+      screenSize: window.screen.width + " " +window.screen.height,
+      language: window.navigator.language,
+    },
+    // Success callback, you can show alert messages
+    // or redirect the user in this function
+    onSuccess: function(response){
+      alert(response)
+    },
+    // Error callback, a good place to show errors 🗿
+    onError: function(error){
+      alert(error)
     }
   });
-
-  if (isFormValid) {
-    warningElement.style.visibility = "hidden";
-    sendEmail(messageData);
-  }
-}
-
-function clearForm(){
-  document.querySelectorAll(".form__input").forEach((input)=>{
-    input.value="";
-  })
-}
 </script>
 <script src="./scripts.js"></script>
 </body>
