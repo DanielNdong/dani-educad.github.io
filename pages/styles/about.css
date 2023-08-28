@@ -1,0 +1,235 @@
+/* ABOUT US */
+.aboutus {
+    padding: 1rem 2rem 4rem;
+}
+.aboutus header {
+    padding: 1.2rem 0 1rem;
+}
+.aboutus header h2 {
+    color: var(--color-blue-active);
+    font-size: 2.2rem;
+    margin: 0 0 12px;
+    text-align: start;
+    font-weight: 800;
+}
+.aboutus > div > p {
+    max-width: 1100px;
+    font-size: 17px;
+}
+@media screen and (min-width: 720px){
+    .aboutus {
+        padding: 1rem 7rem 4rem;
+    }
+}
+
+/* TARGET */
+.target {
+    padding: 1rem 2rem 4rem;
+}
+.target > header > h2 {
+    color: var(--color-blue-active);
+    font-size: 2.2rem;
+    margin: 0 0 12px;
+    text-align: start;
+    font-weight: 800;
+}
+.target  > p {
+    max-width: 1100px;
+    font-size: 17px;
+}
+@media screen and (min-width: 720px){
+    /* ABOU US */
+    .aboutus {
+        padding: 1rem 7rem 4rem;
+    }
+
+    /* TARGET */
+.target {
+    padding: 1rem 7rem 4rem;
+}
+}
+
+/* ÚNETE */
+.banner__section {
+    width: 100vw;
+    height: 500px;
+    margin: 3rem 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 2rem;
+    background-image: linear-gradient(
+        to right,
+        #0b2031da 20%,
+        rgba(10, 13, 14, 0.39) 60%
+      ),url("../../assets/image_50727937.JPG");
+    background-position: 30% 30%;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.banner__section__content {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.banner__section h2, .banner__section p {
+    color: var(--color-bg);
+}
+.banner__section h2 {
+    font-size: 3rem;
+}
+.banner__section p {
+    font-size: 1.1rem;
+}
+.banner__section a {
+    display: block;
+    width: max-content;
+    padding: .8rem 2rem;
+    background-color: var(--color-bg);
+    color: var(--color-blue);
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+/* OFFER */
+.offer {
+    padding: 1rem 1rem 4rem;
+}
+
+.offer > header > h2 {
+    color: var(--color-blue-active);
+    font-size: 2.2rem;
+    margin: 0 0 3rem;
+    text-align: center;
+    font-weight: 800;
+}
+.offer__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.offer__item {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 1.2rem;
+    padding: 3rem 1.2rem;
+    border-radius: 15px;
+    border: solid 2px var(--color-blue-active);
+}
+
+.offer__item:nth-child(1){
+    /* background-color: #eed9ff42; */
+}
+.offer__item:nth-child(2){
+   /*  background-color: #f6f8fbb2; */
+}
+.offer__item:nth-child(3){
+    /* background-color: #ffe2d93d; */
+}
+.offer__content {
+    width: 100%;
+    max-width: 400px;
+}
+.offer__content h2 {
+    margin-bottom: 1rem;
+    font-size: .8rem;
+    font-weight: 800;
+    text-align: center;
+}
+.offer__content p {
+    font-size: .8rem;
+    font-weight: 300;
+    word-spacing: 1;
+    text-align: center;
+}
+.offer__item .offer__img {
+    width: 32vw;
+}
+
+.offer__item .offer__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* TEAM */
+.support {
+    margin: 0;
+}
+@media screen and (min-width: 720px){
+    /* ABOU US */
+    .aboutus {
+        padding: 1rem 7rem 4rem;
+    }
+
+    /* TARGET */
+.target {
+    padding: 1rem 7rem 4rem;
+}
+/* ÚNETE */
+.banner__section {
+    margin: 5rem 0;
+    padding: 0 7rem;
+    background-image: linear-gradient(
+        to right,
+        var(--color-blue-active) 40%,
+        rgba(10, 13, 14, 0.123) 90%
+      ),url("../../assets/image_50727937.JPG");
+}
+/* OFFER */
+.offer {
+    padding: 1rem 7rem 4rem;
+}
+.offer__item {
+    width: 80%;
+    flex-direction: row;
+    gap: 8rem;
+    padding: 5rem  3rem;
+}
+.offer__item:nth-child(2) {
+    margin: auto;
+}
+.offer__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.offer__item .offer__img {
+    width: 400px;
+}
+.offer__item:nth-child(2){
+    /*  background-color: #f6f8fbb2; */
+    margin-left: auto;
+ }
+ .offer__content {
+    width: 400px;
+ }
+
+ .offer__content h2 {
+    margin-bottom: 1.8rem;
+    font-weight: 800;
+    text-align: center;
+}
+.offer__content p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    word-spacing: 1;
+    text-align: center;
+}
+}
+
+@media screen and (min-width: 1024px) {
+    .offer__item {
+        gap: 8rem;
+    }
+}

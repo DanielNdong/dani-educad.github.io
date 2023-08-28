@@ -1,0 +1,2 @@
+/*****/
+Margenes globales izq y der. 25px 

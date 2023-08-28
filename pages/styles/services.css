@@ -1,0 +1,57 @@
+.hero__section__content > h3 {
+  color: gold;
+}
+
+/* JOIN US */
+.joinus button {
+  display: flex;
+  align-items: center;
+  padding: 9px 25px;
+  border-radius: 29px;
+  border: solid 2px var(--color-bg);
+  font-weight: 400;
+  font-size: 15px;
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.joinus button svg {
+  transition: all 0.2s ease-in-out;
+  fill: #fff;
+}
+.joinus button:hover svg {
+  fill: var(--color-blue);
+  transform: translateX(10px);
+  transition: all 0.2s ease-in-out;
+}
+.joinus__img {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  width: 200px;
+  z-index: 1;
+}
+.joinus__img img {
+  width: 100%;
+}
+
+@media  screen and (min-width: 720px) {
+    .joinus {
+        width: 85%;
+        margin: 6rem auto;
+    padding: 5rem 6rem 5rem;
+    border-radius: 50px;
+    }
+    .joinus__img {
+        position: absolute;
+        width: 400px;
+        top: 15px;
+  right: 50px;
+      }
+      .joinus__description h2 {
+        font-size: 3.3rem;
+      }
+}
