@@ -544,6 +544,10 @@ h2 {
   flex-direction: column;
   align-items: center;
 }
+#my-formcarry .form__wrapper {
+  display: flex;
+  gap: 5px;
+}
 .contact form label {
   text-align: center;
   color: var(--color-gray);
