@@ -545,8 +545,10 @@ h2 {
   align-items: center;
 }
 #my-formcarry.form__user__data {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  gap: 5px;
 }
 #my-formcarry .form__wrapper {
   margin: 1rem 0 0;
