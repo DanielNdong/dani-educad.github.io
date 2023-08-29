@@ -544,7 +544,7 @@ h2 {
   flex-direction: column;
   align-items: center;
 }
-#my-formcarry.form__user__data {
+#my-formcarry .form__user__data {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
