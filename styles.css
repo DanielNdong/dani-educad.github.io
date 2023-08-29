@@ -137,7 +137,7 @@ h2 {
 }
 /* HEADER LOGIN */
 .header__userIcon {
-  display: none;
+  display: flex;
 }
 /* HEADER NAVBAR LINKS */
 .headerNav__link__wrapper {
