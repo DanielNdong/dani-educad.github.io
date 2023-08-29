@@ -48,7 +48,7 @@ p {
 h2 {
   font-family: "Roboto", "Arial Narrow", Arial, sans-serif;
 }
-
+/*
 #my-formcarry [type=submit] {
   position: relative;
 }
@@ -68,7 +68,7 @@ h2 {
   bottom: 0;
   left: 0;
 }
-
+*/
 .arrow-in-button {
   width: 23px;
   height: 30px;
