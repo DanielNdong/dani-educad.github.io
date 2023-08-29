@@ -49,10 +49,10 @@ h2 {
   font-family: "Roboto", "Arial Narrow", Arial, sans-serif;
 }
 
-#my-formcarry {
+#my-formcarry [type=submit] {
   position: relative;
 }
-#my-formcarry::before {
+#my-formcarry [type=submit]::before {
   position: absolute;
   content: url("./assets/svg/check.svg");
   width: 40px;
