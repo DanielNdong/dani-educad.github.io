@@ -138,6 +138,7 @@ h2 {
 /* HEADER LOGIN */
 .header__userIcon {
   display: flex;
+  align-items: center;
 }
 .header__button a, .header__userIcon a {
   text-decoration: none;
