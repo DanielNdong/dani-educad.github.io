@@ -139,6 +139,10 @@ h2 {
 .header__userIcon {
   display: flex;
 }
+.header__button a, .header__userIcon a {
+  text-decoration: none;
+  color: #0b2031;
+}
 /* HEADER NAVBAR LINKS */
 .headerNav__link__wrapper {
   list-style: none;
@@ -780,6 +784,8 @@ textarea {
     justify-content: center;
     flex-direction: row;
     gap: 120px;
+    width: min-content;
+    margin: auto;
   }
   .contact h2 {
     font-size: 2.3rem;
