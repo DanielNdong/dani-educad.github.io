@@ -49,6 +49,26 @@ h2 {
   font-family: "Roboto", "Arial Narrow", Arial, sans-serif;
 }
 
+#my-formcarry {
+  position: relative;
+}
+#my-formcarry::before {
+  position: absolute;
+  content: url("./assets/svg/check.svg");
+  width: 40px;
+  height: 40px;
+  bottom: 0;
+  left: 0;
+}
+#my-formcarry::after {
+  position: absolute;
+  content: url("./assets/svg/close.svg");
+  width: 40px;
+  height: 40px;
+  bottom: 0;
+  left: 0;
+}
+
 .arrow-in-button {
   width: 23px;
   height: 30px;

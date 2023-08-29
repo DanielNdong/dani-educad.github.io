@@ -293,7 +293,10 @@
     // Success callback, you can show alert messages
     // or redirect the user in this function
     onSuccess: function(response){
-      console.log(response)
+      console.log(response.code)
+      if(response.code === 200) {
+        
+      }
     },
     // Error callback, a good place to show errors 🗿
     onError: function(error){
