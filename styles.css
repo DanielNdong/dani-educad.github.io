@@ -540,6 +540,7 @@ h2 {
   display: none;
 }
 .contact form {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
