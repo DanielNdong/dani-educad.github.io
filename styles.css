@@ -545,8 +545,13 @@ h2 {
   align-items: center;
 }
 #my-formcarry .form__wrapper {
+  margin: 1rem 0 0;
   display: flex;
+  align-items: center;
   gap: 5px;
+}
+#my-formcarry .form__wrapper svg {
+  display: none;
 }
 .contact form label {
   text-align: center;
@@ -572,7 +577,6 @@ textarea {
   outline: solid 0.3px var(--color-grayLight);
 }
 .contact form button[type="submit"] {
-  margin: 1rem 0 0;
   width: max-content;
   padding: 12px 45px;
   font-size: 14px;
