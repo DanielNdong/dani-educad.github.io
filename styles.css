@@ -656,7 +656,7 @@ textarea {
   /* ABOUT */
   .about {
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     border-radius: 50px;
     height: 600px;
     padding: 5rem 5rem;
