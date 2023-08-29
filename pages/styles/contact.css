@@ -249,7 +249,7 @@ input:focus {
 }
 input[name="firstName"],
 input[name="email"] {
-  width: 100%;
+  width: 48%;
 }
 input[name="subject"],
 textarea {
