@@ -296,7 +296,8 @@
     },
     // Success callback, you can show alert messages
     // or redirect the user in this function
-    onSuccess: function(response){
+    onSuccess: function(response) {
+        console.log(response)
       if(response.code === 200) {
         document.querySelector(".formcarry__check__icon").style.display = "flex";
       
@@ -306,8 +307,11 @@
       }
     },
     // Error callback, a good place to show errors 🗿
-    onError: function(error){
+    onError: function(error) {
+        console.log(response)
         if(error.code !== 200) {
+            document.querySelector(".formcarry__close__icon").style.display = "flex";
+
             setTimeout(() => {
             document.querySelector(".formcarry__close__icon").style.display = "none";
         }, 3000)
