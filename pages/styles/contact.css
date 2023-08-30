@@ -96,8 +96,8 @@ h2 {
   gap: 10px;
 }
 .header__links .header__userIcon svg {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 .header__button a, .header__userIcon a {
   text-decoration: none;
