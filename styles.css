@@ -136,6 +136,10 @@ h2 {
   display: none;
 }
 /* HEADER LOGIN */
+.header__links {
+  display: flex;
+  padding: 0;
+}
 .header__userIcon {
   display: flex;
   align-items: center;
