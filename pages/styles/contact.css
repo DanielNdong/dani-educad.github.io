@@ -261,6 +261,7 @@ textarea {
   outline: none;
   padding: 15px 12px;
   display: block;
+  background-color: var(--color-grayLight);
 }
 .contact form input:hover,
 .contact form textarea:hover,
