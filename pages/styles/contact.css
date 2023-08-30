@@ -288,7 +288,7 @@ textarea {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap-reverse;
-  margin: 3rem 0;
+  margin: 1rem 0 3rem;
   background-color: #fff;
   gap: 15px;
 }
@@ -316,6 +316,7 @@ textarea {
 
 .company .map {
   width: 90%;
+  margin: auto;
   height: 300px;
   background-color: var(--color-button-text);
   border-radius: 20px;
