@@ -589,10 +589,10 @@ textarea {
   outline: none;
   padding: 15px 12px;
   display: block;
+  background-color: var(--color-grayLight);
 }
 .contact form input:hover,
-.contact form textarea:hover,
-.contact form button[type="submit"] {
+.contact form textarea:hover {
   outline: solid 0.3px var(--color-grayLight);
 }
 .contact form button[type="submit"] {
