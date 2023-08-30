@@ -114,7 +114,7 @@ h2 {
 }
 /* HEADER LOGIN */
 .header__userIcon {
-  display: none;
+  display: flex;
   cursor: pointer;
 }
 /* HEADER NAVBAR LINKS */
