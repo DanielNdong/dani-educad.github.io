@@ -244,18 +244,18 @@ h2 {
 #my-formcarry .form__wrapper svg {
   display: none;
 }
-.contact form label {
+.form__contact form label {
   text-align: center;
   color: var(--color-gray);
 }
-.contact form input,
+.form__contact form input,
 textarea {
   display: block;
   margin-top: 10px;
 }
-.contact form input,
-.contact form textarea,
-.contact form button[type="submit"] {
+.form__contact form input,
+.form__contact form textarea,
+.form__contact form button[type="submit"] {
   border-radius: var(--border-radius);
   border: none;
   outline: none;
@@ -263,12 +263,12 @@ textarea {
   display: block;
   background-color: var(--color-grayLight);
 }
-.contact form input:hover,
-.contact form textarea:hover,
-.contact form button[type="submit"] {
+.form__contact form input:hover,
+.form__contact form textarea:hover,
+.form__contact form button[type="submit"] {
   outline: solid 0.3px var(--color-grayLight);
 }
-.contact form button[type="submit"] {
+.form__contact form button[type="submit"] {
   width: max-content;
   padding: 12px 45px;
   font-size: 14px;
@@ -279,10 +279,10 @@ textarea {
   color: #fff;
   transition: all 0.2s ease-in;
 }
-.contact form button[type="submit"]:hover {
+.form__contact form button[type="submit"]:hover {
   background-color: #0a236c;
 }
-.contact form button[type="submit"]:active {
+.form__contact form button[type="submit"]:active {
   background-color: #0b2d94;
 }
 
