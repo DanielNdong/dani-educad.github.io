@@ -88,6 +88,22 @@ h2 {
   height: 100%;
   object-fit: cover;
 }
+/* HEADER LOGIN */
+.header__links
+.header__userIcon {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  gap: 10px;
+}
+.header__links .header__userIcon svg {
+  width: 50px;
+  height: 50px;
+}
+.header__button a, .header__userIcon a {
+  text-decoration: none;
+  color: #0b2031;
+}
 /* HEADER NAVBAR */
 .headerNav {
   display: flex;
