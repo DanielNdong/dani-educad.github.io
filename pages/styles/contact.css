@@ -89,8 +89,7 @@ h2 {
   object-fit: cover;
 }
 /* HEADER LOGIN */
-.header__links
-.header__userIcon {
+.header__links {
   display: flex;
   padding: 0;
   align-items: center;
