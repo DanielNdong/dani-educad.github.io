@@ -214,67 +214,60 @@ h2 {
 }
 
 /* FORM */
-.form__contact {
-  max-width: 800px;
-  margin: auto;
-}
-.form__contact > form {
+.form__user__data{
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  padding: 0 1.2rem;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 5px;
 }
-.form__contact > form .form__user__data {
+#my-formcarry .form__wrapper {
+  margin: 1rem 0 0;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  align-items: center;
+  gap: 5px;
 }
-input,
-textarea {
-  padding: 15px 1rem;
-  background-color: #e6e9ec;
-  border: none;
-  outline: solid 0.2px transparent;
-  transition: all 0.2s ease-in;
-  border-radius: 3px;
-  font-size: .9rem;
+#my-formcarry .form__wrapper svg {
+  display: none;
 }
-input:hover,
-textarea:hover {
-  outline: solid 0.2px rgb(198, 198, 201);
-  transition: all 0.2s ease-in-out;
+.contact form label {
+  text-align: center;
+  color: var(--color-gray);
 }
-input:focus {
-  outline: solid 0.2px rgb(186, 186, 196);
-}
-input[name="firstName"],
-input[name="email"] {
-  width: 48%;
-}
-input[name="subject"],
+.contact form input,
 textarea {
   display: block;
-  width: 100%;
+  margin-top: 10px;
 }
-button[type="submit"] {
-  width: 100%;
-  padding: 0.9rem 2rem;
-  background-color: rgb(34, 60, 148);
+.contact form input,
+.contact form textarea,
+.contact form button[type="submit"] {
+  border-radius: var(--border-radius);
   border: none;
-  outline: solid 0.2px transparent;
-  border-radius: 2px;
-  color: var(--color-carne);
-  font-size: 1rem;
-  font-weight: 400;
+  outline: none;
+  padding: 15px 12px;
+  display: block;
 }
-button[type="submit"]:hover {
-  background-color: rgb(38, 63, 146);
+.contact form input:hover,
+.contact form textarea:hover,
+.contact form button[type="submit"] {
+  outline: solid 0.3px var(--color-grayLight);
 }
-button[type="submit"]:active {
-  background-color: rgb(18, 40, 112);
+.contact form button[type="submit"] {
+  width: max-content;
+  padding: 12px 45px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: var(--color-blue);
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.2s ease-in;
 }
-textarea {
-    height: 120px;
+.contact form button[type="submit"]:hover {
+  background-color: #0a236c;
+}
+.contact form button[type="submit"]:active {
+  background-color: #0b2d94;
 }
 
 /* COMPANY */
