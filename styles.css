@@ -336,6 +336,14 @@ h2 {
   top: 0;
 }
 
+.about svg {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
 .about__description {
   max-width: 600px;
   position: relative;
