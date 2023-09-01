@@ -234,6 +234,7 @@ h2 {
   align-items: flex-start;
   row-gap: 1rem;
   color: var(--color-gray);
+  z-index: 1;
 }
 .presentation__description p {
   font-size: 14px;
