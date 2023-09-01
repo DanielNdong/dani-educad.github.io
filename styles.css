@@ -74,7 +74,7 @@ h2 {
   height: 30px;
 }
 
-.a {
+.button {
   display: block;
   width: max-content;
   padding: 9px 25px;
@@ -232,25 +232,25 @@ h2 {
   text-align: left;
   color: var(--color-darkGray);
 }
-.presentation a {
+.presentation .button {
   display: block;
   text-decoration: none;
 }
-.presentation a {
+.presentation .button {
   color: var(--color-blue);
   transition: all 0.2s ease-in-out;
 }
-.presentation a:hover {
+.presentation .button:hover {
   color: var(--color-white);
   background-color: var(--color-blue);
 }
-.presentation a:active {
+.presentation .button:active {
   background-color: #120e58;
 }
-.presentation a svg {
+.presentation .button svg {
   transition: all 0.2s ease-in-out;
 }
-.presentation a:hover svg {
+.presentation .button:hover svg {
   fill: #fff;
   transform: translateX(10px);
   transition: all 0.2s ease-in-out;
@@ -386,22 +386,22 @@ h2 {
   font-size: 21px;
   color: var(--color-white);
 }
-.about__description a {
+.about__description .button {
   border-color: var(--color-white);
   color: var(--color-white);
 }
-.about__description a:hover {
+.about__description .button:hover {
   color: var(--color-blue);
   background-color: var(--color-white);
 }
-.about__description a:active {
+.about__description .button:active {
   background-color: rgb(219, 219, 219);
 }
-.about__description a svg {
+.about__description .button svg {
   transition: all 0.2s ease-in-out;
   fill: #fff;
 }
-.about__description a:hover svg {
+.about__description .button:hover svg {
   fill: var(--color-blue);
   transform: translateX(10px);
   transition: all 0.2s ease-in-out;
