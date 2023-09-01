@@ -225,7 +225,7 @@ h2 {
 } 
 .presentation__title h2 {
   text-align: left;
-  color: var(--color-bg);
+  color: var(--color-white);
   font-size: 2rem;
 }
 .presentation__description {
@@ -238,13 +238,14 @@ h2 {
 .presentation__description p {
   font-size: 14px;
   text-align: left;
-  color: var(--color-bg);
+  color: var(--color-white);
 }
 
 .presentation .button {
   text-decoration: none;
-  color: var(--color-bg);
+  color: var(--color-white);
   transition: all 0.2s ease-in-out;
+  border: solid 2px var(--color-white);
 }
 .presentation .button:hover {
   color: var(--color-white);
