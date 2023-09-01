@@ -1,2 +1,2 @@
-# dani-educad.github.io
-Diseño del landing para Educad.gq
+# EDUCAD <BETA>
+Diseño del landing para EducadGQ
