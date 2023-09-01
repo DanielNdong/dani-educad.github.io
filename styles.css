@@ -257,6 +257,7 @@ h2 {
 }
 .presentation .button svg {
   transition: all 0.2s ease-in-out;
+  fill: var(--color-bg);
 }
 .presentation .button:hover svg {
   fill: #fff;
