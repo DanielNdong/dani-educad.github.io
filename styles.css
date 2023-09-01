@@ -628,6 +628,8 @@ textarea {
 .contact form input,
 .contact form textarea,
 .contact form button[type="submit"] {
+  width: 80%;
+  margin: auto;
   border-radius: var(--border-radius);
   border: none;
   outline: none;
