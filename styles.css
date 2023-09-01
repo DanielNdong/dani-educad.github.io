@@ -37,6 +37,14 @@
   /* H2 */
   --title-size: 1.8rem;
 }
+/* utility */
+html.sr .load-hidden {
+  visibility: hidden;
+}
+/* extension */
+html.sr .widget {
+    visibility: hidden;
+}
 
 /* ELEMENTS */
 li {

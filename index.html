@@ -71,7 +71,7 @@
     <main>
         <!-- FIRST SECTION -->
         <section class="presentation ">
-            <div class="presentation__description">
+            <div class="presentation__description .load-hidden">
                 <div class="presentation__title">
                     <h2>Desbloquea Tu Potencial con EDUCAD: Donde el Aprendizaje se Transforma</h2>
                 </div>
@@ -84,7 +84,7 @@
           </div>
         </section>
         <!-- TARGETS -->
-        <section class="target">
+        <section class="target content">
             <div class="target__img ">
                 <img src="./assets/chica-con-ordenador-2.JPG" alt="Mujer mirando el ordenador">
             </div>
@@ -99,7 +99,7 @@
             </div>
         </section>
         <!-- ABOUT US -->
-        <section class="about">
+        <section class="about content">
             <div class="about__description">
                 <span></span>
                 <h2>Biblioteca Virtual: Tu Fuente Inagotable de Conocimiento</h2>
@@ -114,7 +114,7 @@
             </div>
         </section>
         <!-- SERVICES -->
-        <section class="services" id="services">
+        <section class="services content" id="services">
             <h2>Aprendizaje con Horarios Flex nibles para Tu Estilo de Vida</h2>
             <p>No importa dónde estés ni cuándo puedas estudiar: EDUCAD te ofrece horarios de
                 clase flexibles para adaptarse a tu vida ocupada. Nuestra aula virtual está disponible
@@ -146,7 +146,7 @@
             </div>
         </section>
         <!-- COLLABORATE -->
-        <section class="collaborate">
+        <section class="collaborate content">
            <div class="collaborate__wrapper">
             <h2>Clases colaborativas en linea con EDUACAD.</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis tempora, nihil atque autem necessitatibus ad qui veritatis modi accusantium pariatur soluta, nesciunt, nam repellendus aliquid sapiente vel hic quisquam iusto.</p>
@@ -193,7 +193,7 @@
            </div>
         </section>
         <!-- CONTACT -->
-        <section class="contact" id="contact">
+        <section class="contact content" id="contact">
             <div class="contact_header">
                 <h2>Contacta con nosotros</h2>
                 <span>Ponte en contacto con nosotros y consultanos lo que quieras</span>
@@ -289,12 +289,8 @@
         </div>
     </footer>
     <script>
-        ScrollReveal().reveal('.presentation');
-        ScrollReveal().reveal('.target');
-        ScrollReveal().reveal('.about');
-        ScrollReveal().reveal('.services');
-        ScrollReveal().reveal('.collaborate');
-        ScrollReveal().reveal('.contact');
+        ScrollReveal().reveal('.presentation__description', { duration: 200 });
+        ScrollReveal().reveal('.content', { interval: 1500 });
     </script>
 <script src="https://carrier.formcarry.com/js/v1.js"></script>
 <script>
