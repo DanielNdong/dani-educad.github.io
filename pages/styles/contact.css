@@ -259,12 +259,12 @@ textarea {
   outline: none;
   padding: 15px 12px;
   display: block;
-  background-color: var(--color-grayLight);
+  background-color: #e5e5e5;
 }
 .form__contact form input:hover,
 .form__contact form textarea:hover,
 .form__contact form button[type="submit"] {
-  outline: solid 0.3px var(--color-grayLight);
+  outline: solid 0.3px #dedede;
 }
 .form__contact form button[type="submit"] {
   width: max-content;
