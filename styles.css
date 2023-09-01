@@ -220,7 +220,6 @@ h2 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-color: var(--color-white);
   row-gap: 20px;
   margin-bottom: 4rem;
