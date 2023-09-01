@@ -85,7 +85,7 @@
         </section>
         <!-- TARGETS -->
         <section class="target content">
-            <div class="target__img ">
+            <div class="target__img">
                 <img src="./assets/chica-con-ordenador-2.JPG" alt="Mujer mirando el ordenador">
             </div>
             <div class="target__description">
@@ -289,8 +289,13 @@
         </div>
     </footer>
     <script>
+        ScrollReveal({ distance: '60px' });
         ScrollReveal().reveal('.presentation__description', { duration: 2200 });
+        ScrollReveal().reveal('.target__img', { origin: 'left' });
+        ScrollReveal().reveal('.target__img', { duration: 800 });
         ScrollReveal().reveal('.content', { interval: 2000 });
+        ScrollReveal().reveal('.content', { origin: 'bottom' });
+        ScrollReveal().reveal('.content',{ easing: 'ease-in-out' });
     </script>
 <script src="https://carrier.formcarry.com/js/v1.js"></script>
 <script>
