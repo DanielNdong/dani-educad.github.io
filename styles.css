@@ -221,7 +221,7 @@ h2 {
   content: "";
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, rgba(12, 3, 52, 0.211) 30%, rgba(0, 0, 0, 0.348) 80%);
+  background: linear-gradient(to top, rgb(42 31 85 / 9%) 78%, rgb(16 12 47 / 29%) 97%);
 } 
 .presentation__title h2 {
   text-align: left;
