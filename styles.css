@@ -662,7 +662,7 @@ textarea {
 /* FOOTER */
 .footer {
   background-color: var(--color-blue);
-  padding: 3rem 25px 20px;
+  padding: 5rem 25px 20px;
 }
 .footer h2 {
   font-family: "Roboto";
