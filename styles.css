@@ -717,7 +717,9 @@ textarea {
     font-size: 3rem;
   }
   .presentation__description {
-    width: 500px;
+    width: 630px;
+    max-width: 100%;
+    margin: 0;
   }
   .presentation__description p {
     font-size: 1.2rem;
