@@ -699,7 +699,7 @@ textarea {
   /* PRESENTATION */
   .presentation {
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     gap: 50px;
   }
   .presentation__title {
