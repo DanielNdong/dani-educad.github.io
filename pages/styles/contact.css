@@ -182,7 +182,7 @@ h2 {
   display: flex;
 }
 
-.presentation {
+.presentation__contact {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -196,7 +196,7 @@ h2 {
   overflow: hidden;
 }
 
-.presentation__description {
+.presentation__description__contact {
   max-width: 800px;
   padding: 2rem 1.4rem 3rem;
   display: flex;
@@ -204,15 +204,13 @@ h2 {
   align-items: center;
   gap: 5px;
 }
-.presentation__description span {
-  color: var(--color-darkBlue);
-}
-.presentation__description h2 {
+
+.presentation__description__contact h2 {
   position: relative;
   color: var(--color-blue-active);
   font-size: 2.3rem;
 }
-.presentation__description h2::before {
+.presentation__description__contact h2::before {
   position: absolute;
   content: "Alguna pregunta?";
   top: -24px;
@@ -222,7 +220,7 @@ h2 {
   font-weight: 500;
   color: rgb(107, 107, 107);
 }
-.presentation__description p {
+.presentation__description__contact p {
   max-width: 800px;
   color: var(--color-blue-active);
   text-align: center;
@@ -580,7 +578,7 @@ textarea {
     display: none;
   }
 
-  .presentation {
+  .presentation__contact {
     display: block;
     flex-direction: row-reverse;
   }
