@@ -173,7 +173,7 @@ h2 {
   display: none;
   position: absolute;
   top: 70px;
-  right: 20px;
+  right: 35px;
   background-color: var(--color-white);
   border-radius: var(--border-radius);
   box-shadow: 6px 7px 27px -10px rgb(59, 59, 59);
