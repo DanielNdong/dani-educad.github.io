@@ -228,6 +228,9 @@ h2 {
   color: var(--color-white);
   font-size: 2rem;
 }
+.presentation__description h2::before {
+  display: none;
+}
 .presentation__description {
   display: flex;
   flex-direction: column;
