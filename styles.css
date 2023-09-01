@@ -228,6 +228,9 @@ h2 {
   text-align: left;
   color: var(--color-darkGray);
 }
+.presentation a {
+  text-decoration: none;
+}
 .presentation button {
   color: var(--color-blue);
   transition: all 0.2s ease-in-out;
@@ -337,6 +340,9 @@ h2 {
   top: 0;
 }
 
+.about a {
+  text-decoration: none;
+}
 .about svg {
   display: block;
   position: absolute;
