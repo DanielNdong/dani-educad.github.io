@@ -633,11 +633,11 @@ textarea {
   outline: none;
   padding: 15px 12px;
   display: block;
-  background-color: var(--color-grayLight);
+  background-color: #e7e7e7;
 }
 .contact form input:hover,
 .contact form textarea:hover {
-  outline: solid 0.3px var(--color-grayLight);
+  outline: solid 0.3px #e0dfdf;
 }
 .contact form button[type="submit"] {
   width: max-content;
