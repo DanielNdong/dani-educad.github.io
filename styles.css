@@ -205,16 +205,25 @@ h2 {
 
 /* FIRST PRESENTATION */
 .presentation {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: start;
   background-image: url("./assets/man-2562325_1920.jpg");
-  background-position: center;
+  background-position: center -413px;
   background-size: cover;
+  background-repeat: no-repeat;
   padding: 1.8rem 25px 3rem;
   background-color: var(--color-white);
   row-gap: 20px;
 }
+.presentation::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(12, 3, 52, 0.211) 30%, rgba(0, 0, 0, 0.348) 80%);
+} 
 .presentation__title h2 {
   text-align: left;
   color: var(--color-blue);
