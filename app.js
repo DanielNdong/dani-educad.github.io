@@ -1,4 +1,4 @@
-class HolaMundo extend HTMLElement {
+class HolaMundo extends HTMLElement {
 
   constructor() {
     super()
@@ -13,14 +13,3 @@ class HolaMundo extend HTMLElement {
 }
  customElement.define("hola-mundo", HolaMundo)
 
-class ElementoEspecifico extend HTMLElement {
-
-  constructor() {
-  super()
-
-    this.innerHTML = "<p>Este es un componento con un elemento especifico<p>"
-}
-
-}
-
-customElement.defin("elemento-especifico", ElementoEspecifico, options: {extends: 'button'})
