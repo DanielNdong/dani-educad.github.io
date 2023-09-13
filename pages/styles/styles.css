@@ -186,7 +186,7 @@ main {
   flex-direction: column;
   gap: 2rem;
   justify-content: center;
-  padding: 4rem 0;
+  padding: 1rem 0 4rem;
   background-color: #ffff;
 }
 .hero__section > .wrapper__image {
@@ -441,14 +441,14 @@ main {
     justify-content: space-between;
   }
   .headerNav__link {
-    font-weight: 500;
+    font-weight: 600;
     color: var(--color-blue);
   }
   .header__button {
     display: flex;
     border-radius: 35px;
     border: none;
-    outline: solid 2px var(--color-blue);
+    /* outline: solid 2px var(--color-blue); */
     padding: 7px 20px;
     background-color: var(--color-white);
     margin-right: 1rem;
