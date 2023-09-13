@@ -131,7 +131,7 @@ h2 {
 }
 /* HEADER */
 .header {
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: 0px;
   background-color: var(--color-white);
