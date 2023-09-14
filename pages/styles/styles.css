@@ -100,7 +100,6 @@ h2 {
 /* HEADER MENU */
 .header__menuIcon {
   display: flex;
-  width: 30px;
 }
 .header__menuIcon img {
   width: 100%;
@@ -116,7 +115,6 @@ h2 {
   display: flex;
   padding: 0;
   align-items: center;
-  gap: 15px;
 }
 .header__links .header__userIcon svg {
   width: 40px;
