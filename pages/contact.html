@@ -330,7 +330,7 @@ fetch(formcarryUrl, {
             // or redirect the user in this function
             onSuccess: function (response) {
                 document.querySelector('#my-formcarry').reset();
-                console.log(`Mensaje despues del onSuccess ${responose}`, response)
+                console.log(`Mensaje despues del onSuccess ${response} ${response.status}`, response, response.status)
             },
             // Error callback, a good place to show errors 🗿
             onError: function (error) {
