@@ -334,7 +334,7 @@ fetch(formcarryUrl, {
                 if(response.status === 'success') {
                     document.querySelector("[name=enviar]").textContent = "Correo enviado!";
                     document.querySelector("[name=enviar]").style.backgroundColor = "#156b11";
-                    setTimeout({
+                    setTimeout(()=>{
                         document.querySelector("[name=enviar]").textContent = "Enviar";
                     },3000)
                    
@@ -345,7 +345,7 @@ fetch(formcarryUrl, {
             onError: function (error) {
                 console.log(error)
                 document.querySelector(".mssj__error").style.display = "block";
-                  setTimeout({
+                  setTimeout(()=>{
                         document.querySelector(".mssj__error").style.display = "none";
                     },3000)
             }
