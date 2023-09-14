@@ -46,6 +46,10 @@ html.sr .widget {
     visibility: hidden;
 }
 
+body {
+  height: auto !important;
+}
+
 /* ELEMENTS */
 li {
   list-style: none;
