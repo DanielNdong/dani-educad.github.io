@@ -283,7 +283,7 @@
     <script src="https://carrier.formcarry.com/js/v1.js"></script>
     <script>
         // Tu URL de Formcarry
-var formcarryUrl = "https://formcarry.com/s/SMYTTUUwCu";
+/* var formcarryUrl = "https://formcarry.com/s/SMYTTUUwCu";
 let email = document.querySelector("#email");let name = document.querySelector("#name");let subject = document.querySelector("#subject");let message = document.querySelector("#message");
 // Tus datos del formulario
 var formData = {firstName: name,
@@ -312,8 +312,8 @@ fetch(formcarryUrl, {
 })
 .catch((error) => {
   console.error('MENSAJE DE ERROR:', error);
-});
-       /*  formcarry({
+}); */
+        formcarry({
             // replace this "you-form-id-in-formcarry" with your form id that you can get it from the dashboard.
             form: "SMYTTUUwCu",
             // id or class name of the form element, only form element allowed
@@ -330,12 +330,13 @@ fetch(formcarryUrl, {
             // or redirect the user in this function
             onSuccess: function (response) {
                 document.querySelector('#my-formcarry').reset();
+                console.log(`Mensaje despues del onSuccess ${responose}`, response)
             },
             // Error callback, a good place to show errors 🗿
             onError: function (error) {
                 console.log(error)
             }
-        }); */
+        });  
     </script>
     <script src="../scripts.js"></script>
 </body>
