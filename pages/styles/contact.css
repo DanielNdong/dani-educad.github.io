@@ -274,6 +274,10 @@ h2 {
 #my-formcarry .form__wrapper svg {
   display: none;
 }
+.mssj__error {
+  display: none;
+  color: #d20000;
+}
 .form__contact form label {
   text-align: center;
   color: var(--color-gray);
