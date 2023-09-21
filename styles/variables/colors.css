@@ -1,0 +1,11 @@
+:root {
+    /* Labels, placeholder and text */
+    --input-color: #626d7a;
+    --input-text-color: #3A3A3A;
+
+    /* border and outline color */
+    --border-color: #17a9ec;
+
+    /* Barra de progreso en vista desktop */
+    --progress-menu-items: #8ba6bd;
+}

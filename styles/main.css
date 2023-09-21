@@ -1,0 +1,28 @@
+@import url('./variables/colors.css');
+@import url('./components/inputs.css');
+@import url('./components/select.css');
+@import url('./components/inputDate.css');
+@import url('./components/textarea.css');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+label {
+    display: block;
+    width: 100%;
+    min-width: 120px;
+    max-width: 320px;
+}
+ label > span {
+    display: block;
+    font-size: .75rem;
+    margin-bottom: .6rem;
+    color: var(--input-color);
+}
