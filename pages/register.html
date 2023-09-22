@@ -451,7 +451,12 @@
 
                             <div class="form__navigation">
                                 <a href="./register#education" class="prev">Atrás</a>
-                                <a href="http://educad-gq.com" class="next">Registrar</a>
+                                <button type="submit!" name="submit" id="submit">Crear usuario</button>
+                                <a href="http://educad-gq.com" 
+                                    class="next" 
+                                    id="goToEducad"
+                                    style="display: none"
+                                >Registrar</a>
                             </div>
                         </div>
                     </div>
@@ -480,12 +485,11 @@
             onSuccess: function (response) {
                 document.querySelector('#my-formcarry').reset();
                 if(response.status === 'success') {
-                    document.querySelector("[name=enviar]").textContent = "Correo enviado!";
-                    document.querySelector("[name=enviar]").style.backgroundColor = "#156b11";
-                    setTimeout(()=>{
+                    document.querySelector("#goToEducad").style.display = "flex";
+                  /*   setTimeout(()=>{
                         document.querySelector("[name=enviar]").textContent = "Enviar";
                     },3000)
-                   
+                    */
                 }
                 console.log(`Mensaje despues del onSuccess ${response} ${response.status}`, response, response.status)
             },
