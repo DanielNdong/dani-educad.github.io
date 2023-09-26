@@ -1,6 +1,7 @@
 const inputTextAttributes = {
-    placeholder: "Introduce tu nombre",
-    label: "Nombre",
+    placeholder: "Introduce un valor al label",
+    label: "labelName",
+    nameInput: "inputname",
 };
 
 const textTemplate  = document.createElement('element');
@@ -47,7 +48,7 @@ textTemplate.innerHTML = `
 <label>
     <p class="required">*</p>
     <span>${inputTextAttributes.label}</span>
-    <input type="text" name="firstName" id="name" placeholder="${inputTextAttributes.placeholder}" required/>
+    <input type="text" name="${inputTextAttributes.nameInput}" id="${inputTextAttributes.nameInput}" placeholder="${inputTextAttributes.placeholder}" required/>
 </label>
     `;
 
@@ -61,11 +62,12 @@ textTemplate.innerHTML = `
     attributeChangedCallback(attr, oldAttr, newAttr){
         if(attr === 'label') inputTextAttributes.label = newAttr;
         if(attr === 'placeholdertext') inputTextAttributes.placeholder = newAttr;
+        if(attr === 'inputName') inputTextAttributes.nameInput = newAttr;
       /*   if(attr === 'hasLabel') */
 }
 
     static get observedAttributes(){
-        return ['placeholdertext', 'label', 'hasLabel']
+        return ['placeholdertext', 'label', 'haslabel', 'inputname']
     }
     
     connectedCallback() {
@@ -75,13 +77,15 @@ textTemplate.innerHTML = `
     }
     
     elements() {
-        this.label = this.root.querySelector('span')
-        this.input = this.root.querySelector('input')
+        this.label = this.root.querySelector('span');
+        this.input = this.root.querySelector('input');
     }
     
     update() {
-        this.label.innerText = inputTextAttributes.label
-        this.input.placeholder = inputTextAttributes.placeholder
+        this.label.innerText = inputTextAttributes.label;
+        this.input.placeholder = inputTextAttributes.placeholder;
+        this.input.id = inputTextAttributes.nameInput;
+        this.input.name = inputTextAttributes.nameInput;
     }
 
     render() {
