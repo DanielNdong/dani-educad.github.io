@@ -54,7 +54,7 @@ textTemplate.innerHTML = `
     class InputText extends HTMLElement {
     constructor(){
         super();
-        this.root = this.attachShadow({ mode: 'closed' });
+        this.root = this.attachShadow({ mode: 'open' });
         
     }
 
