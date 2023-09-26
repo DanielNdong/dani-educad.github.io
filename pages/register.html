@@ -112,12 +112,26 @@
                             <div class="sections">
                                 <input-text class="inline" placeholdertext="Nombre del centro" label="Centro-Universidad"
                                     hasLabel="true"></input-text>
-                                <input-text class="inline" placeholdertext="Ubicacion" label="Ubicacion"
-                                    hasLabel="true"></input-text>
+                                <label for"selectNivelAcademico">
+                                    <span>Nivel Académico</span>
+                                    <select name="selectNivelAcademico" id="selectNivelAcademico">
+                                        <option value="primaria">Primaria</option>
+                                        <option value="esba">ESBA</option>
+                                        <option value="bachillerato">Bachillerato</option>
+                                    </select>
+                                </label>  
                             </div>
                             <div class="sections">
-                                <input-email class="inline" placeholdertext="Correo electrónico" label="Email(Opcional)"
-                                    hasLabel="false"></input-email>
+                                <label for="selectRamaBachillerato">
+                                    <span>Rama de Bachillerato</span>
+                                <select name="selectRamaBachillerato" id="selectRamaBachillerato">
+                                        <option value="humanidades">Humanidades</option>
+                                        <option value="ciencias">Ciencias</option>
+                                        <option value="tecnologia">Tecnología</option>
+                                    </select> 
+                                </label>
+                                <input-text class="inline" placeholdertext="Curso" label="Curso"
+                                    hasLabel="true"></input-text>
                                 <input-number class="inline" placeholdertext="Teléfono" label="Teléfono(Opcional)"
                                     hasLabel="false"></input-email>
                             </div>
