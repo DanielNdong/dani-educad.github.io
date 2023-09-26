@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+@import url("./variables/colors.css");
+@import url("./components/inputs.css");
+@import url("./components/select.css");
+@import url("./components/inputDate.css");
+@import url("./components/textarea.css");
+@import url("./header.css");
+@import url("./footer.css");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+label {
+  display: block;
+  width: 100%;
+  min-width: 120px;
+  max-width: 320px;
+}
+label > span {
+  display: block;
+  font-size: 0.75rem;
+  margin-bottom: 0.6rem;
+  color: var(--input-color);
+}
+/* utility */
+html.sr .load-hidden {
+  visibility: hidden;
+}
+/* extension */
+html.sr .widget {
+  visibility: hidden;
+}
+
+body {
+  height: auto !important;
+}
+
+/* ELEMENTS */
+li {
+  list-style: none;
+}
+p {
+  letter-spacing: 0.6;
+}
+h2 {
+  font-family: "Roboto", "Arial Narrow", Arial, sans-serif;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  padding: 9px 25px;
+  border-radius: 29px;
+  border: solid 2px var(--color-blue);
+  font-weight: 400;
+  font-size: 15px;
+  background-color: inherit;
+  gap: 10px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+.button:hover {
+  color: var(--color-blue);
+  background-color: var(--color-white);
+}
+.button:active {
+  background-color: rgb(219, 219, 219);
+}
+.button svg {
+  transition: all 0.2s ease-in-out;
+  fill: #fff;
+}
+.button:hover svg {
+  fill: var(--color-white);
+  transform: translateX(15px);
+  transition: all 0.2s ease-in-out;
+}
+
+.arrow-in-button {
+    width: 23px;
+    height: 30px;
+  }
+  
+  .container {
+    margin: auto;
+    max-width: 1420px;
+  }

@@ -1,0 +1,203 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Portal de Registro - EDUCADGQ - Prueba</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/pages/register.css">
+    <script src="../components/forms/inputText.js"></script>
+    <script src="../components/forms/inputEmail.js"></script>
+    <script src="../components/forms/inputNumber.js"></script>
+    <script src="../components/forms/inputSelect.js"></script>
+    <link rel="stylesheet" href="../styles/components/select.css">
+    <link rel="stylesheet" href="../styles/components/inputDate.css">
+    <link rel="stylesheet" href="../styles/components/textarea.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <aside class="progress__menu">
+                <p>Portal de registro a la plataforma <span class="title">EDUCAD</span></p>
+                <ul>
+                    <li class="register-link-item" id="personal">
+                        <a href="http://">Información personales</a>
+                    </li>
+                    <li class="register-link-item" id="aditional">
+                        <a href="http://">Información adicional</a>
+                    </li>
+                    <li class="register-link-item" id="education">
+                        <a href="http://">Educación</a>
+                    </li>
+                    <li class="register-link-item" id="userInfo">
+                        <a href="http://">Completado!</a>
+                    </li>
+                </ul>
+            </aside>
+            <section class="register__form__wrapper">
+                <form id="my-formcarry">
+                        <!-- DATOS DEL ALUMNO -->
+                        <div class="personal register_section register_section--show" data-id="1">
+                            <h2>DATOS DEL ALUMNO</h2>
+                            <p class="aviso__campos"><span>*</span>Importante, asegurate de rellenar todos los campos antes de guardar.</p>
+                            <div class="sections">
+                                <input-text class="inline" placeholdertext="Tu nombre" label="Nombre"
+                                    hasLabel="true"></input-text>
+                                <input-text class="inline" placeholdertext="Tus apellidos" label="Apellidos"
+                                    hasLabel="true"></input-text>
+                            </div>
+                            <div class="sections">
+                                <input-email class="inline" placeholdertext="Correo electrónico" label="Email"
+                                    hasLabel="false"></input-email>
+                                <input-number class="inline" placeholdertext="Tu número" label="Teléfono"
+                                    hasLabel="false"></input-email>
+                            </div>
+                            <div class="sections">
+                                <label for="date">
+                                <p class="aviso__campos"><span>*</span></p>
+                                    <span>Fecha de Nacimiento</span>
+                                    <input type="date" name="" id="date">
+                                </label>
+
+                            </div>
+                            <div class="sections">
+                                    <input-text class="inline" placeholdertext="Semu, Alcaide, Ela Nguema..." label="Dirección / Barrio"></input-text>
+                                <label for="selectCiudad">
+                                    <p class="aviso__campos"><span>*</span></p>
+                                    <span>Ciudad</span>
+                                    <select name="select" id="selectCiudad">
+                                        <option value="malabo">Malabo</option>
+                                        <option value="bata">Bata</option>
+                                        <option value="mongomo">Mongomo</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="sections textarea__section">
+                                <label for="description">
+                                    <span>Description</span>
+                                    <textarea name="description" id="description"
+                                        placeholder="Danos una descripcion de tu barrio"></textarea>
+                                </label>
+                            </div>
+                            <div class="form__navigation">
+                                <a href="../index.html" class="prev">Salir</a>
+                                <a href="./register.html#aditional" class="next">Siguiente</a>
+                            </div>
+                        </div>
+                        <!-- INFORMACION ADICIONAL -->
+                        <div class="aditional register_section" data-id="2">
+                            <h2>INFORMACIÓN ADICIONAL</h2>
+                            <div class="sections">
+                                <input-text class="inline" placeholdertext="Nombre del tutor"
+                                    label="Padre o tutor (Si es menor)" hasLabel="true"></input-text>
+                                <input-text class="inline" placeholdertext="¿Es tu padre, madre, tio...?"
+                                    label="Afinidad" hasLabel="true"></input-text>
+                            </div>
+                            <div class="sections">
+                                <input-number class="inline" placeholdertext="Tel: 222 345 329"
+                                    label="Contacto del tutor" hasLabel="false"></input-number>
+                                <input-number class="inline" placeholdertext="" label="Teléfono de emergencia"
+                                    hasLabel="false"></input-text>
+                            </div>
+                            <div class="form__navigation">
+                                <a href="./register.html#personal" class="prev">Atrás</a>
+                                <a href="./register.html#education" class="next">Siguiente</a>
+                            </div>
+                        </div>
+                        <!-- INFORMACION EDUCATIVA -->
+                        <div class="education register_section " data-id="3">
+                            <h2>EDUCACIÓN</h2>
+                            <div class="sections">
+                                <input-text class="inline" placeholdertext="Nombre del centro" label="Centro-Universidad"
+                                    hasLabel="true"></input-text>
+                                <input-text class="inline" placeholdertext="Ubicacion" label="Ubicacion"
+                                    hasLabel="true"></input-text>
+                            </div>
+                            <div class="sections">
+                                <input-email class="inline" placeholdertext="Correo electrónico" label="Email(Opcional)"
+                                    hasLabel="false"></input-email>
+                                <input-number class="inline" placeholdertext="Teléfono" label="Teléfono(Opcional)"
+                                    hasLabel="false"></input-email>
+                            </div>
+                            <div class="sections">
+                                <input-text class="inline" aria-placeholdertext="Semu, Alcaide, Ela Nguema..." label="Dirección / Barrio"></input-text>
+                                <label for="selectCiudad">
+                                    <span>Ciudad</span>
+                                    <select name="select" id="selectCiudad">
+                                        <option value="malabo">Malabo</option>
+                                        <option value="bata">Bata</option>
+                                        <option value="mongomo">Mongomo</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="form__navigation">
+                                <a href="./register.html#aditional" class="prev">Atrás</a>
+                                <a href="./register.html#userInfo" class="next">Siguiente</a>
+                            </div>
+                        </div>
+                        <!-- ULTIMO PASO -->
+                        <div class="user register_section " data-id="4">
+                            <!-- <h2>BIENVENIDO A <b>EDUCAD</b></h2> -->
+                            <div class="sections">
+                               <p>Te damos la bienvenida a la plataforma de aprendizaje en line Educad. Para completar el registro debes aceptar los terminos y condiciones y serás parte de Educad.</p>
+                            </div>
+                            <div class="sections">
+                                <label for="checkbox">
+                                    <input type="checkbox" name="terms" id="terms" required>
+                                    <p>Aceptas los <span>Términos y Condiciones</span> y las <span>Política de Privacidad</span> y uso de datos de la plataforma Educad.</p>
+                                </label>
+                            </div>
+
+                            <div class="form__navigation">
+                                <a href="./register.html#education" class="prev">Atrás</a>
+                                <button type="submit" name="submit" id="submit">Regístrate</button>
+                            </div>
+                        </div>
+                </form>
+            </section>
+        </section>
+    </main>
+    <script src="../js/formSlider/slider.js"></script>
+    <script src="https://carrier.formcarry.com/js/v1.js"></script>
+    <script>
+        formcarry({  
+            // replace this "you-form-id-in-formcarry" with your form id that you can get it from the dashboard.
+            form: "ZXWGVVejZx",
+            // id or class name of the form element, only form element allowed
+            // works with css selectors
+            // # <= for id
+            // . <= for class
+            element: "#my-formcarry",
+            extraData: {
+                // add whatever you want
+                screenSize: window.screen.width + " " + window.screen.height,
+                language: window.navigator.language,
+            },
+            // Success callback, you can show alert messages
+            // or redirect the user in this function
+            onSuccess: function (response) {
+                document.querySelector('#my-formcarry').reset();
+                if(response.status === 'success') {
+                    document.querySelector("#goToEducad").style.display = "flex";
+                  /*   setTimeout(()=>{
+                        document.querySelector("[name=enviar]").textContent = "Enviar";
+                    },3000)
+                    */
+                }
+                console.log(`Mensaje despues del onSuccess ${response} ${response.status}`, response, response.status)
+            },
+            // Error callback, a good place to show errors 🗿
+            onError: function (error) {
+                console.log(error)
+                document.querySelector(".mssj__error").style.display = "block";
+                  setTimeout(()=>{
+                        document.querySelector(".mssj__error").style.display = "none";
+                    },3000)
+            }
+        });  
+    </script>
+</body>
+
+</html>

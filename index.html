@@ -1,519 +1,629 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="EducadGE es una plataforma de aprendizaje en linea para que estudiantes y docentes puedan acceder a sus archivos en desde el navegador">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="EducadGE es una plataforma de aprendizaje en linea para que estudiantes y docentes puedan acceder a sus archivos en desde el navegador"
+    />
     <!-- Primary Meta Tags -->
-<title>Educad.gq - Plataforma de aprendizaje en línea de Guinea Ecuatorial </title>
-<meta name="title" content="Educad.gq - Plataforma de aprendizaje online de Guinea Ecuatorial " />
-<meta name="description" content="Educad es una plataforma de aprendizaje en línea para escuelas, centros profesionales y universidades que crea un ambiente colaborativo entre alumnos y profesores" />
+    <title>
+      Educad.gq - Plataforma de aprendizaje en línea de Guinea Ecuatorial
+    </title>
+    <meta
+      name="title"
+      content="Educad.gq - Plataforma de aprendizaje online de Guinea Ecuatorial "
+    />
+    <meta
+      name="description"
+      content="Educad es una plataforma de aprendizaje en línea para escuelas, centros profesionales y universidades que crea un ambiente colaborativo entre alumnos y profesores"
+    />
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://metatags.io/" />
-<meta property="og:title" content="Educad.gq - Plataforma de aprendizaje online de Guinea Ecuatorial " />
-<meta property="og:description" content="Educad es una plataforma de aprendizaje en línea para escuelas, centros profesionales y universidades que crea un ambiente colaborativo entre alumnos y profesores" />
-<meta property="og:image" content="./assets/LOGO EDUCAD.pn" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta
+      property="og:title"
+      content="Educad.gq - Plataforma de aprendizaje online de Guinea Ecuatorial "
+    />
+    <meta
+      property="og:description"
+      content="Educad es una plataforma de aprendizaje en línea para escuelas, centros profesionales y universidades que crea un ambiente colaborativo entre alumnos y profesores"
+    />
+    <meta property="og:image" content="./assets/LOGO EDUCAD.pn" />
 
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="https://twitter.com/Educad_gq?s=09" />
-<meta property="twitter:title" content="Educad.gq - Plataforma de aprendizaje online de Guinea Ecuatorial " />
-<meta property="twitter:description" content="Educad es una plataforma de aprendizaje en línea para escuelas, centros profesionales y universidades que crea un ambiente colaborativo entre alumnos y profesores" />
-<meta property="twitter:image" content="./assets/LOGO EDUCAD.pn" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://twitter.com/Educad_gq?s=09" />
+    <meta
+      property="twitter:title"
+      content="Educad.gq - Plataforma de aprendizaje online de Guinea Ecuatorial "
+    />
+    <meta
+      property="twitter:description"
+      content="Educad es una plataforma de aprendizaje en línea para escuelas, centros profesionales y universidades que crea un ambiente colaborativo entre alumnos y profesores"
+    />
+    <meta property="twitter:image" content="./assets/LOGO EDUCAD.pn" />
 
-<!-- Meta Tags Generated with https://metatags.io -->
-    <link rel="stylesheet" href="./pages/styles/contact.css">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./slider.css">
-    <link href="./dist/hamburgers.css" rel="stylesheet">
+    <!-- Meta Tags Generated with https://metatags.io -->
+    <link href="./dist/hamburgers.css" rel="stylesheet" />
     <script src="https://unpkg.com/scrollreveal"></script>
-</head>
-<body>
+    <script src="./components/buttonLinks/ButtonLinks.js"></script>
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+  </head>
+  <body>
     <header class="header">
-        <nav class="headerNav container">
-            <!-- Logo de la Empresa -->
-            <div class="header__logo__wrapper">
-                <a href="./index.html">
-                    <img class="header__logo" src="./assets/LOGO EDUCAD.png" alt="Logo de educage">
-                </a>
-            </div>
-            <!-- Menu de navegacion -->
-            <ul class="headerNav__ul">
-                <li class="headerNav__link__wrapper">
-                    <a class="headerNav__link headerNav__link--active" href="./">Inicio</a>
-                </li>
-                <li class="headerNav__link__wrapper">
-                    <a class="headerNav__link" href="./pages/service.html">Servicios</a>
-                </li>
-                <li class="headerNav__link__wrapper">
-                    <a class="headerNav__link" href="./pages/about.html">Sobre Nosotros</a>
-                </li>
-                <li class="headerNav__link__wrapper">
-                    <a class="headerNav__link" href="./pages/contact.html">Contacto</a>
-                </li>
-            </ul>
-            <button class="header__button" aria-label="Ir a Educad">
-                <a href="https://educad-gq.com">
-                    Ir a Educad
-                </a>
-            </button>
-            <div class="header__links">
-                <div class="header__userIcon" aria-label="boton-login">
-                    <a href="./pages/register.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#0b2031" viewBox="0 -960 960 960"><path d="M233.964-253.577q59.806-40.807 118.344-63.23Q410.846-339.23 480-339.23t127.75 22.423q58.596 22.423 119.519 63.23 43.73-50.653 64.769-106.59 21.039-55.937 21.039-119.665 0-140.899-96.173-237.072T480-813.077q-140.731 0-236.904 96.173t-96.173 237.072q0 63.728 21.347 119.665 21.346 55.937 65.694 106.59Zm245.874-204.347q-53.876 0-90.434-36.719-36.557-36.719-36.557-90.595 0-53.877 36.719-90.434 36.719-36.558 90.596-36.558 53.876 0 90.434 36.719 36.557 36.719 36.557 90.596 0 53.876-36.719 90.434-36.719 36.557-90.596 36.557Zm.38 354.846q-77.855 0-146.73-29.725-68.875-29.724-119.931-80.961-51.056-51.237-80.767-119.681-29.712-68.444-29.712-146.725 0-77.775 29.725-146.414 29.724-68.639 80.961-119.777 51.237-51.138 119.681-80.849 68.444-29.712 146.725-29.712 77.775 0 146.414 29.725 68.639 29.724 119.777 80.961 51.138 51.237 80.849 119.82 29.712 68.583 29.712 146.198 0 77.855-29.725 146.73-29.724 68.875-80.961 119.931-51.237 51.056-119.82 80.767-68.583 29.712-146.198 29.712Zm-.26-43.845q55.504 0 109.177-17.577 53.673-17.578 102.404-57.193-48.731-35.231-101.718-54.461-52.988-19.231-109.749-19.231-56.762 0-110.36 18.692-53.597 18.692-100.866 55 48.346 39.615 101.978 57.193 53.631 17.577 109.134 17.577Zm.096-354.846q36.369 0 59.812-23.496 23.442-23.496 23.442-59.865 0-36.37-23.496-59.812-23.496-23.443-59.866-23.443-36.369 0-59.812 23.496-23.442 23.496-23.442 59.866 0 36.369 23.496 59.812 23.496 23.442 59.866 23.442ZM480-585.077Zm0 363.923Z"/></svg>
-                    </a>
-                </div>
-                <button class="hamburger hamburger--squeeze header__menuIcon" id="menu-button" type="button"  aria-label="Menu-button">
-                    <span class="hamburger-box">
-                      <span class="hamburger-inner"></span>
-                    </span>
-                  </button>
-            </div>
-            <!-- El ventana menu -->
-            <div class="menu__header">
-                <ul class="menu__nav">
-                    <li class="headerNav__link__wrapper">
-                        <a class="headerNav__link" href="./index.html">Inicio</a>
-                    </li>
-                    <li class="headerNav__link__wrapper">
-                        <a class="headerNav__link" href="./pages/service.html">Servicios</a>
-                    </li>
-                    <li class="headerNav__link__wrapper">
-                        <a class="headerNav__link" href="./pages/about.html">Sobre Nosotros</a>
-                    </li>
-                    <li class="headerNav__link__wrapper">
-                        <a class="headerNav__link" href="./pages/contact.html">Contacto</a> 
-                    </li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="headerNav container">
+        <!-- Logo de la Empresa -->
+        <a href="./index.html">
+        <div class="header__logo__wrapper">
+            <img
+              class="header__logo"
+              src="./assets/LOGO EDUCAD.png"
+              alt="Logo de educage"
+            />
+        </div>
+    </a>
+        <!-- Menu de navegacion -->
+        <ul class="headerNav__ul">
+          <li class="headerNav__link__wrapper">
+            <a class="headerNav__link headerNav__link--active" href="./"
+              >Inicio</a
+            >
+          </li>
+          <li class="headerNav__link__wrapper">
+            <a class="headerNav__link" href="./pages/service.html">Servicios</a>
+          </li>
+          <li class="headerNav__link__wrapper">
+            <a class="headerNav__link" href="./pages/about.html"
+              >Sobre Nosotros</a
+            >
+          </li>
+          <li class="headerNav__link__wrapper">
+            <a class="headerNav__link" href="./pages/contact.html">Contacto</a>
+          </li>
+        </ul>
+        <button class="header__button" aria-label="Ir a Educad">
+          <a href="https://educad-gq.com"> Ir a Educad </a>
+        </button>
+        <div class="header__links">
+          <div class="header__userIcon" aria-label="boton-login">
+            <a href="./pages/register.html#personal">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#0b2031"
+                viewBox="0 -960 960 960"
+              >
+                <path
+                  d="M233.964-253.577q59.806-40.807 118.344-63.23Q410.846-339.23 480-339.23t127.75 22.423q58.596 22.423 119.519 63.23 43.73-50.653 64.769-106.59 21.039-55.937 21.039-119.665 0-140.899-96.173-237.072T480-813.077q-140.731 0-236.904 96.173t-96.173 237.072q0 63.728 21.347 119.665 21.346 55.937 65.694 106.59Zm245.874-204.347q-53.876 0-90.434-36.719-36.557-36.719-36.557-90.595 0-53.877 36.719-90.434 36.719-36.558 90.596-36.558 53.876 0 90.434 36.719 36.557 36.719 36.557 90.596 0 53.876-36.719 90.434-36.719 36.557-90.596 36.557Zm.38 354.846q-77.855 0-146.73-29.725-68.875-29.724-119.931-80.961-51.056-51.237-80.767-119.681-29.712-68.444-29.712-146.725 0-77.775 29.725-146.414 29.724-68.639 80.961-119.777 51.237-51.138 119.681-80.849 68.444-29.712 146.725-29.712 77.775 0 146.414 29.725 68.639 29.724 119.777 80.961 51.138 51.237 80.849 119.82 29.712 68.583 29.712 146.198 0 77.855-29.725 146.73-29.724 68.875-80.961 119.931-51.237 51.056-119.82 80.767-68.583 29.712-146.198 29.712Zm-.26-43.845q55.504 0 109.177-17.577 53.673-17.578 102.404-57.193-48.731-35.231-101.718-54.461-52.988-19.231-109.749-19.231-56.762 0-110.36 18.692-53.597 18.692-100.866 55 48.346 39.615 101.978 57.193 53.631 17.577 109.134 17.577Zm.096-354.846q36.369 0 59.812-23.496 23.442-23.496 23.442-59.865 0-36.37-23.496-59.812-23.496-23.443-59.866-23.443-36.369 0-59.812 23.496-23.442 23.496-23.442 59.866 0 36.369 23.496 59.812 23.496 23.442 59.866 23.442ZM480-585.077Zm0 363.923Z"
+                />
+              </svg>
+            </a>
+          </div>
+          <button
+            class="hamburger hamburger--squeeze header__menuIcon"
+            id="menu-button"
+            type="button"
+            aria-label="Menu-button"
+          >
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+        <!-- El ventana menu -->
+        <div class="menu__header">
+          <ul class="menu__nav">
+            <li class="headerNav__link__wrapper">
+              <a class="headerNav__link" href="./index.html">Inicio</a>
+            </li>
+            <li class="headerNav__link__wrapper">
+              <a class="headerNav__link" href="./pages/service.html"
+                >Servicios</a
+              >
+            </li>
+            <li class="headerNav__link__wrapper">
+              <a class="headerNav__link" href="./pages/about.html"
+                >Sobre Nosotros</a
+              >
+            </li>
+            <li class="headerNav__link__wrapper">
+              <a class="headerNav__link" href="./pages/contact.html"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <!-- FIRST SECTION -->
-        <section class="presentation ">
+      <!-- FIRST SECTION -->
+      <section class="presentation">
+        <div class="presentation__wrapper">
             <div class="presentation__description .load-hidden">
                 <div class="presentation__title">
-                    <h2>Desbloquea Tu Potencial con EDUCAD: Donde el Aprendizaje se Transforma</h2>
+                  <h2>
+                    Desbloquea Tu Potencial con EDUCAD: Donde el Aprendizaje se
+                    Transforma
+                  </h2>
                 </div>
-                <p>Únete a la primera plataforma digital de gestión de aprendizaje diseñado para los docentes y estudiantes de los institutos educativos de Guinea Ecuatorial. 
+                <p>
+                  Únete a la primera plataforma digital de gestión de aprendizaje
+                  diseñado para los docentes y estudiantes de los institutos
+                  educativos de Guinea Ecuatorial.
                 </p>
-                <a class="button" href="https://educad-gq.com" aria-label="Ir a Educad">
-                    Ir a Educad
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-arrow-right" width="32" height="32" viewBox="0 0 24 24" stroke-width="1" stroke="#0f0d3e" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0 -18" />
-                        <path d="M16 12l-4 -4" />
-                        <path d="M16 12h-8" />
-                        <path d="M12 16l4 -4" />
-                      </svg>
-                </a>
+                <button-link href="http://educad-gq.com" color="white" hiddenArrow="true">
+                  <span slot="text">Entra en Educad</span>
+                </button-link>
+              </div>
+        </div>
+      </section>
+      <!-- TARGETS -->
+      <section class="target content">
+        <div class="target__img">
+          <img
+            src="./assets/chica-con-ordenador-2.JPG"
+            alt="Mujer mirando el ordenador"
+          />
+        </div>
+        <div class="target__description">
+          <h2>Explora Nuestra Aula Virtual</h2>
+          <p>
+            Bienvenido a EDUCAD, donde tu educación se adapta a tus necesidades.
+            Nuestro innovador aula virtual te brinda la libertad de aprender a
+            tu ritmo mientras te conectas con instructores expertos.
+          </p>
+          <p>
+            Descubre un espacio donde el aprendizaje cobra vida y tus objetivos
+            educativos se convierten en logros tangibles.
+          </p>
+          <button-link href="http://educad-gq.com" color="white">
+                <p slot="text">Ir a Educad</p>
+          </button-link>
+        </div>
+      </section>
+      <!-- ABOUT US -->
+      <section class="about content">
+        <div class="about__description">
+          <span></span>
+          <h2>Biblioteca Virtual: Tu Fuente Inagotable de Conocimiento</h2>
+          <p>
+            En EDUCAD, la sabiduría está al alcance de tus manos. Explora
+            nuestra biblioteca virtual, repleta de recursos enriquecedores que
+            te inspirarán y te desafiarán. Desde libros electrónicos hasta
+            materiales multimedia, esta biblioteca es tu compañera constante en
+            tu búsqueda de conocimiento.
+          </p>
+          <button-link href="http://educad-gq.com" hiddenarrow="true" color="inherit">
+            <span slot="text">Aprende más</span>
+          </button-link>
+        </div>
+      </section>
+      <!-- SERVICES -->
+      <section class="services content" id="services">
+        <h2>Aprendizaje con Horarios Flexibles para Tu Estilo de Vida</h2>
+        <p>
+          No importa dónde estés ni cuándo puedas estudiar: EDUCAD te ofrece
+          horarios de clase flexibles para adaptarse a tu vida ocupada.<span
+            class="hidden__phrase"
+          >
+            Nuestra aula virtual está disponible las 24 horas, los 7 días de la
+            semana, permitiéndote diseñar tu propio camino educativo mientras
+            equilibras tus responsabilidades diarias.</span
+          >
+        </p>
+        <div class="services__items__wrapper">
+          <div class="services__items item1">
+            <div class="services__description">
+              <ul>
+                <li>Accesible</li>
+                <li>Secure & Scalable</li>
+                <li>Customisable</li>
+              </ul>
+              <h3>EDUCAD PARA PROFESORES</h3>
+              <p>Sube tus apuntes a educad y dedica más tiempo enseñando.</p>
+            </div>
           </div>
-        </section>
-        <!-- TARGETS -->
-        <section class="target content">
-            <div class="target__img">
-                <img src="./assets/chica-con-ordenador-2.JPG" alt="Mujer mirando el ordenador">
+          <div class="services__items item2">
+            <div class="services__description">
+              <ul>
+                <li>Accesible</li>
+                <li>Secure & Scalable</li>
+                <li>Customisable</li>
+              </ul>
+              <h3>EDUCAD PARA ESTUDIANTES</h3>
+              <p>
+                Se acabaron los dictados cansinos en las aulas ten acceso a tus
+                apuntes desde cualquier lugar y en cualquier momento.
+              </p>
             </div>
-            <div class="target__description">
-                <h2>Explora Nuestra Aula Virtual</h2>
-                <p>Bienvenido a EDUCAD, donde tu educación se adapta a tus necesidades. Nuestro
-                    innovador aula virtual te brinda la libertad de aprender a tu ritmo mientras te conectas
-                    con instructores expertos.</p>
-                <p>Descubre un espacio donde el aprendizaje cobra vida y tus
-                    objetivos educativos se convierten en logros tangibles.</p>
-                    <a class="button" href="https://educad-gq.com">
-                       Visitar aula virtual
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-arrow-right" width="32" height="32" viewBox="0 0 24 24" stroke-width="1" stroke="#0f0d3e" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                           <path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0 -18" />
-                           <path d="M16 12l-4 -4" />
-                           <path d="M16 12h-8" />
-                           <path d="M12 16l4 -4" />
-                         </svg>
-                       </a>
-            </div>
-        </section>
-        <!-- ABOUT US -->
-        <section class="about content">
-            <div class="about__description">
-                <span></span>
-                <h2>Biblioteca Virtual: Tu Fuente Inagotable de Conocimiento</h2>
-                <p>En EDUCAD, la sabiduría está al alcance de tus manos. Explora nuestra biblioteca
-                    virtual, repleta de recursos enriquecedores que te inspirarán y te desafiarán. Desde
-                    libros electrónicos hasta materiales multimedia, esta biblioteca es tu compañera
-                    constante en tu búsqueda de conocimiento.</p>               
-                    <a class="button" href="https://educad-gq.com">
-                         Únete a Educad
-                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-arrow-right" width="32" height="32" viewBox="0 0 24 24" stroke-width="1" stroke="#0f0d3e" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0 -18" />
-                            <path d="M16 12l-4 -4" />
-                            <path d="M16 12h-8" />
-                            <path d="M12 16l4 -4" />
-                          </svg>
-                        </a>
-            </div>
-        </section>
-        <!-- SERVICES -->
-        <section class="services content" id="services">
-            <h2>Aprendizaje con Horarios Flexibles para Tu Estilo de Vida</h2>
-            <p>No importa dónde estés ni cuándo puedas estudiar: EDUCAD te ofrece horarios de
-                clase flexibles para adaptarse a tu vida ocupada.<span class="hidden__phrase"> Nuestra aula virtual está disponible
-                las 24 horas, los 7 días de la semana, permitiéndote diseñar tu propio camino educativo
-                mientras equilibras tus responsabilidades diarias.</span></p>
-            <div class="services__items__wrapper">
-                <div class="services__items item1">
-                    <div class="services__description">
-                        <ul>
-                            <li>Accesible</li>
-                            <li>Secure & Scalable</li>
-                            <li>Customisable</li>
-                        </ul>
-                        <h3>EDUCAD PARA PROFESORES</h3>
-                        <p>Sube tus apuntes a educad y dedica más tiempo enseñando.</p>
-                    </div>
-                </div>
-                <div class="services__items item2">
-                    <div class="services__description">
-                        <ul>
-                            <li>Accesible</li>
-                            <li>Secure & Scalable</li>
-                            <li>Customisable</li>
-                        </ul>
-                        <h3>EDUCAD PARA ESTUDIANTES</h3>
-                        <p>Se acabaron los dictados cansinos en las aulas ten acceso a tus apuntes desde cualquier lugar y en cualquier momento.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- COLLABORATE -->
-        <section class="collaborate content">
-            <div id="collaborate-nav"></div>
-            <div class="collaborate__wrapper">
-                <h2>Tu viaje de aprendizaje comienza ahora</h2>    
-            <div id="collaborate-section" class="collaborate-container">
-                <div class="collaborate__collaborate">
-                  <div class="collaborate__scroll">
-                    <div class="scroll__item scroll__item--item1">
-                      <div class="scroll-item__content scroll-item__content--active">
-                        <p class="content__title"> Calificaciones Transparentes y Personalizadas </p>
-                        <div class="content__description">
-                          <p class="description__item border-bot">
-                             Nuestra plataforma te brinda acceso a tus calificaciones de manera transparente, permitiéndote rastrear tu desarrollo y celebrar tus éxitos.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="scroll__item scroll__item--item2">
-                      
-                      <div class="scroll-item__content scroll-item__content--active">
-                        <p class="content__title">Únete a Nuestra Comunidad 
-                        </p>
-                       <div class="content__description">
-                          <p class="description__item border-bot">
-                            EDUCAD te conecta con compañeros de todo el mundo, creando un entorno en línea enriquecedor donde puedes colaborar, intercambiar ideas y crecer juntos hacia un futuro más brillante. 
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="scroll__item scroll__item--item4">
-                      <div class="scroll-item__content scroll-item__content--active">
-                        <p class="content__title">Tu Viaje de Aprendizaje Personalizado Comienza Ahora 
-                        </p>
-                      <div class="content__description">
-                          <p class="description__item border-bot">
-                            Estás a un clic de distancia de una educación transformadora. EDUCAD te invita a comenzar un viaje educativo que se adapta a ti, te empodera y te prepara para el éxito.
-                        </p>
-                        </div>
-                      </div>
+          </div>
+        </div>
+      </section>
+      <!-- COLLABORATE -->
+      <section class="collaborate content">
+        <div id="collaborate-nav"></div>
+        <div class="collaborate__wrapper">
+          <h2>Tu viaje de aprendizaje comienza ahora</h2>
+          <div id="collaborate-section" class="collaborate-container">
+            <div class="collaborate__collaborate">
+              <div class="collaborate__scroll">
+                <div class="scroll__item scroll__item--item1">
+                  <div
+                    class="scroll-item__content scroll-item__content--active"
+                  >
+                    <p class="content__title">
+                      Calificaciones Transparentes y Personalizadas
+                    </p>
+                    <div class="content__description">
+                      <p class="description__item border-bot">
+                        Nuestra plataforma te brinda acceso a tus calificaciones
+                        de manera transparente, permitiéndote rastrear tu
+                        desarrollo y celebrar tus éxitos.
+                      </p>
                     </div>
                   </div>
                 </div>
-                <div class="collaborate__controls">
-                  <img
-                    src="https://venersol.com/wp-content/uploads/2023/04/arrow-icon.png"
-                    alt="back arrow"
-                    class="control controls__back-arrow"
-                    onclick="scrollCollaborate('left')"
-                  />
-                  <img
-                    src="https://venersol.com/wp-content/uploads/2023/04/arrow-icon.png"
-                    alt="back arrow"
-                    class="control controls__forward-arrow"
-                    onclick="scrollCollaborate('right')"
-                  />
-                </div>
-            </div>
-            </div>
-        </section>
-
-        <!-- CONTACT -->
-    <!--     <section class="contact content" id="contact">
-            <div class="contact_header">
-                <h2>Contacta con nosotros</h2>
-                <span>Ponte en contacto con nosotros y consultanos lo que quieras</span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem distinctio molestias ipsam libero excepturi, voluptatibus possimus placeat voluptatum nobis porro, odit quasi rerum error soluta fugit vero temporibus ea unde?</p>
-            </div>
-             <form id="my-formcarry">
-                  <div class="form__user__data">
-                    <input type="text" id="name" name="firstName"  placeholder="Tu nombre"/>
-                  
-                    <input type="email" id="email" name="email"  placeholder="Correo electrónico"/>
+                <div class="scroll__item scroll__item--item2">
+                  <div
+                    class="scroll-item__content scroll-item__content--active"
+                  >
+                    <p class="content__title">Únete a Nuestra Comunidad</p>
+                    <div class="content__description">
+                      <p class="description__item border-bot">
+                        EDUCAD te conecta con compañeros de todo el mundo,
+                        creando un entorno en línea enriquecedor donde puedes
+                        colaborar, intercambiar ideas y crecer juntos hacia un
+                        futuro más brillante.
+                      </p>
+                    </div>
                   </div>
-                  
-                  <input type="text" id="subject" name="subject"  placeholder="Asunto"/>    
-                 
-                  <textarea id="message" name="message"></textarea>
-                 
-                  <div class="form__wrapper">
-                    <button type="submit">Enviar</button>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="formcarry__close__icon" viewBox="0 -960 960 960" fill="green" height="32" width="32"><path d="M479.971-103.078q-79.355 0-148.055-29.039t-119.701-80.076q-51.002-51.037-80.069-119.681-29.068-68.644-29.068-148.059 0-79.144 29.045-147.899 29.044-68.755 80.09-119.797 51.046-51.042 119.702-80.168Q400.571-856.922 480-856.922q70.581 0 131.867 22.558 61.286 22.557 110.786 62.75l-31.499 31.768q-43.146-35.319-96.445-54.275Q541.411-813.077 480-813.077q-140.731 0-236.904 96.173T146.923-480q0 140.731 96.173 236.904T480-146.923q140.731 0 236.904-96.173T813.077-480q0-30.756-4.847-59.24-4.846-28.484-13.653-55.529l32.73-33.307q14.269 34.115 21.942 71.256t7.673 76.82q0 79.459-29.097 148.142-29.097 68.683-80.133 119.672-51.037 50.989-119.759 80.048-68.723 29.06-147.962 29.06Zm-58.663-209.923L270.539-464.385l32.923-33.307 117.846 117.846 402.307-402.499 33.922 32.922-436.229 436.422Z"/></svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="formcarry__check__icon" viewBox="0 -960 960 960" fill="red" height="32" width="32"><path d="M332.154-301.385 480-449.231l147.846 147.846 30.769-30.769L510.769-480l147.846-147.846-30.769-30.769L480-510.769 332.154-658.615l-30.769 30.769L449.231-480 301.385-332.154l30.769 30.769Zm148.002 198.307q-77.601 0-146.322-29.825-68.722-29.824-119.96-81.095-51.238-51.27-81.017-119.799-29.779-68.528-29.779-146.047 0-78.216 29.825-147.13 29.824-68.914 81.095-119.902 51.27-50.988 119.799-80.517 68.528-29.529 146.047-29.529 78.216 0 147.136 29.693t119.902 80.595q50.982 50.902 80.511 119.623 29.529 68.721 29.529 146.855 0 77.601-29.575 146.322-29.574 68.722-80.595 119.96-51.02 51.238-119.741 81.017-68.721 29.779-146.855 29.779Zm-.202-43.845q138.623 0 235.873-97.512t97.25-235.519q0-138.623-97.205-235.873-97.204-97.25-235.826-97.25-138.007 0-235.565 97.205-97.558 97.204-97.558 235.826 0 138.007 97.512 235.565 97.512 97.558 235.519 97.558ZM480-480Z"/></svg>
+                </div>
+                <div class="scroll__item scroll__item--item4">
+                  <div
+                    class="scroll-item__content scroll-item__content--active"
+                  >
+                    <p class="content__title">
+                      Tu Viaje de Aprendizaje Personalizado Comienza Ahora
+                    </p>
+                    <div class="content__description">
+                      <p class="description__item border-bot">
+                        Estás a un clic de distancia de una educación
+                        transformadora. EDUCAD te invita a comenzar un viaje
+                        educativo que se adapta a ti, te empodera y te prepara
+                        para el éxito.
+                      </p>
+                    </div>
                   </div>
-                </form>
-        </section> -->
-
-          <!-- FAQ -->
-          <section class="faq">
-            <h2>FAQ!</h2>
-            <h3>Podemos ayudarte?</h3>
-            <div class="faq__wrapper">
-                <div class="faq__item">
-                    <div class="faq__header">
-                        <h3>Pregunta #1</h3>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.172 11.9998L9.343 9.17184L10.757 7.75684L15 11.9998L10.757 16.2428L9.343 14.8278L12.172 11.9998Z"
-                                fill="#0E0B3D">
-                            </path>
-                        </svg>
-                    </div>
-                    <div class="faq__content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quidem aliquid odio
-                            itaque nostrum quia voluptas tempora doloribus, iure sapiente harum aut</p>
-                    </div>
                 </div>
-                <div class="faq__item">
-                    <div class="faq__header">
-                        <h3>Pregunta #2</h3>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.172 11.9998L9.343 9.17184L10.757 7.75684L15 11.9998L10.757 16.2428L9.343 14.8278L12.172 11.9998Z"
-                                fill="#0E0B3D"></path>
-                        </svg>
-                    </div>
-                    <div class="faq__content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quidem aliquid odio
-                            itaque nostrum quia voluptas tempora doloribus, iure sapiente harum aut</p>
-                    </div>
-                </div>
-                <div class="faq__item">
-                    <div class="faq__header">
-                        <h3>Pregunta #3</h3>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.172 11.9998L9.343 9.17184L10.757 7.75684L15 11.9998L10.757 16.2428L9.343 14.8278L12.172 11.9998Z"
-                                fill="#0E0B3D"></path>
-                        </svg>
-                    </div>
-                    <div class="faq__content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quidem aliquid odio
-                            itaque nostrum quia voluptas tempora doloribus, iure sapiente harum aut</p>
-                    </div>
-                </div>
-                <div class="faq__item">
-                    <div class="faq__header">
-                        <h3>Pregunta #4</h3>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.172 11.9998L9.343 9.17184L10.757 7.75684L15 11.9998L10.757 16.2428L9.343 14.8278L12.172 11.9998Z"
-                                fill="#0E0B3D"></path>
-                        </svg>
-                    </div>
-                    <div class="faq__content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quidem aliquid odio
-                            itaque nostrum quia voluptas tempora doloribus, iure sapiente harum aut</p>
-                    </div>
-                </div>
-                <div class="faq__item">
-                    <div class="faq__header">
-                        <h3>Pregunta #5</h3>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.172 11.9998L9.343 9.17184L10.757 7.75684L15 11.9998L10.757 16.2428L9.343 14.8278L12.172 11.9998Z"
-                                fill="#0E0B3D"></path>
-                        </svg>
-                    </div>
-                    <div class="faq__content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quidem aliquid odio
-                            itaque nostrum quia voluptas tempora doloribus, iure sapiente harum aut</p>
-                    </div>
-                </div>
-                <div class="faq__item">
-                    <div class="faq__header">
-                        <h3>Pregunta #6</h3>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.172 11.9998L9.343 9.17184L10.757 7.75684L15 11.9998L10.757 16.2428L9.343 14.8278L12.172 11.9998Z"
-                                fill="#0E0B3D"></path>
-                        </svg>
-                    </div>
-                    <div class="faq__content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quidem aliquid odio
-                            itaque nostrum quia voluptas tempora doloribus, iure sapiente harum aut</p>
-                    </div>
-                </div>
-                <p>Necesitas más información?</p>
-                <a class="button" href="./pages/contact.html">
-                   Contáctanos
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-arrow-right" width="32" height="32" viewBox="0 0 24 24" stroke-width="1" stroke="#0f0d3e" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                       <path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0 -18" />
-                       <path d="M16 12l-4 -4" />
-                       <path d="M16 12h-8" />
-                       <path d="M12 16l4 -4" />
-                     </svg>
-                   </a>
+              </div>
             </div>
-        </section>
-
+            <div class="collaborate__controls">
+              <img
+                src="https://venersol.com/wp-content/uploads/2023/04/arrow-icon.png"
+                alt="back arrow"
+                class="control controls__back-arrow"
+                onclick="scrollCollaborate('left')"
+              />
+              <img
+                src="https://venersol.com/wp-content/uploads/2023/04/arrow-icon.png"
+                alt="back arrow"
+                class="control controls__forward-arrow"
+                onclick="scrollCollaborate('right')"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ -->
+      <section class="faq">
+        <h2>FAQ!</h2>
+        <h3>Podemos ayudarte?</h3>
+        <div class="faq__wrapper">
+          <div class="faq__item">
+            <div class="faq__header">
+              <h3>Pregunta #1</h3>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.172 11.9998L9.343 9.17184L10.757 7.75684L15 11.9998L10.757 16.2428L9.343 14.8278L12.172 11.9998Z"
+                  fill="#0E0B3D"
+                ></path>
+              </svg>
+            </div>
+            <div class="faq__content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellendus quidem aliquid odio itaque nostrum quia voluptas
+                tempora doloribus, iure sapiente harum aut
+              </p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__header">
+              <h3>Pregunta #2</h3>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.172 11.9998L9.343 9.17184L10.757 7.75684L15 11.9998L10.757 16.2428L9.343 14.8278L12.172 11.9998Z"
+                  fill="#0E0B3D"
+                ></path>
+              </svg>
+            </div>
+            <div class="faq__content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellendus quidem aliquid odio itaque nostrum quia voluptas
+                tempora doloribus, iure sapiente harum aut
+              </p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__header">
+              <h3>Pregunta #3</h3>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.172 11.9998L9.343 9.17184L10.757 7.75684L15 11.9998L10.757 16.2428L9.343 14.8278L12.172 11.9998Z"
+                  fill="#0E0B3D"
+                ></path>
+              </svg>
+            </div>
+            <div class="faq__content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellendus quidem aliquid odio itaque nostrum quia voluptas
+                tempora doloribus, iure sapiente harum aut
+              </p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__header">
+              <h3>Pregunta #4</h3>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.172 11.9998L9.343 9.17184L10.757 7.75684L15 11.9998L10.757 16.2428L9.343 14.8278L12.172 11.9998Z"
+                  fill="#0E0B3D"
+                ></path>
+              </svg>
+            </div>
+            <div class="faq__content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellendus quidem aliquid odio itaque nostrum quia voluptas
+                tempora doloribus, iure sapiente harum aut
+              </p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__header">
+              <h3>Pregunta #5</h3>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.172 11.9998L9.343 9.17184L10.757 7.75684L15 11.9998L10.757 16.2428L9.343 14.8278L12.172 11.9998Z"
+                  fill="#0E0B3D"
+                ></path>
+              </svg>
+            </div>
+            <div class="faq__content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellendus quidem aliquid odio itaque nostrum quia voluptas
+                tempora doloribus, iure sapiente harum aut
+              </p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <div class="faq__header">
+              <h3>Pregunta #6</h3>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.172 11.9998L9.343 9.17184L10.757 7.75684L15 11.9998L10.757 16.2428L9.343 14.8278L12.172 11.9998Z"
+                  fill="#0E0B3D"
+                ></path>
+              </svg>
+            </div>
+            <div class="faq__content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellendus quidem aliquid odio itaque nostrum quia voluptas
+                tempora doloribus, iure sapiente harum aut
+              </p>
+            </div>
+          </div>
+          <p>Tienes otras preguntas que no encuentras?</p>
+          <a href="./pages/contact.html">Solicita más informaci'on</a>
+          <!-- <button-link href="./pages/contact.html" color="white">
+            <span slot="text">Solicita más información</span>
+          </button-link> -->
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <h2>Educad.gq</h2>
-        <div class="footer__wrapper">
-            <div>
-                <ul class="footer__content">
-                    <li class="footer__link__wrapper">
-                        <a href="./pages/service.html" class="footer__links">
-                            Servicios
-                        </a>
-                    </li>
-                    <li class="footer__link__wrapper">
-                        <a href="./pages/about.html" class="footer__links">
-                            Sobre nosotros
-                        </a>
-                    </li>
-                    <li class="footer__link__wrapper">
-                        <a href="./pages/contact.html" class="footer__links">
-                            Contacto
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__socialMedia">
-                <h3>Siguenos por: </h3>
-                <ul>
-                    <li>
-                        <a href="./">
-                            <img src="./assets/facebook.png" alt="facebook logo">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./">
-                            <img src="./assets/instagram.png" alt="instagram logo">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./">
-                            <img src="./assets/twitter.png" alt="twitter logo">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./">
-                            <img src="./assets/linkedin.png" alt="linkedin logo">
-                        </a>
-                    </li>
-                </ul>
-            </div> 
+      <h2>Educad.gq</h2>
+      <div class="footer__wrapper">
+        <div>
+          <ul class="footer__content">
+            <li class="footer__link__wrapper">
+              <a href="./pages/service.html" class="footer__links">
+                Servicios
+              </a>
+            </li>
+            <li class="footer__link__wrapper">
+              <a href="./pages/about.html" class="footer__links">
+                Sobre nosotros
+              </a>
+            </li>
+            <li class="footer__link__wrapper">
+              <a href="./pages/contact.html" class="footer__links">
+                Contacto
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="footer__legal">
-            <div>
-                <ul>
-                    <li class="footer__legal__link">
-                        <a href="./">
-                            Politicas de privacidad
-                        </a>
-                    </li>
-                    <li class="footer__legal__link">
-                        <a href="./">
-                            Aviso legal
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__copyright">
-                <p>Copyright Educadgq todos los derechos reservados</p>
-            </div>
+        <div class="footer__socialMedia">
+          <h3>Siguenos por:</h3>
+          <ul>
+            <li>
+              <a href="./">
+                <img src="./assets/facebook.png" alt="facebook logo" />
+              </a>
+            </li>
+            <li>
+              <a href="./">
+                <img src="./assets/instagram.png" alt="instagram logo" />
+              </a>
+            </li>
+            <li>
+              <a href="./">
+                <img src="./assets/twitter.png" alt="twitter logo" />
+              </a>
+            </li>
+            <li>
+              <a href="./">
+                <img src="./assets/linkedin.png" alt="linkedin logo" />
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
+      <div class="footer__legal">
+        <div>
+          <ul>
+            <li class="footer__legal__link">
+              <a href="./"> Politicas de privacidad </a>
+            </li>
+            <li class="footer__legal__link">
+              <a href="./"> Aviso legal </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright">
+          <p>Copyright Educadgq todos los derechos reservados</p>
+        </div>
+      </div>
     </footer>
     <script>
-        ScrollReveal({ distance: '60px' });
-        ScrollReveal().reveal('.presentation__description', { duration: 2200 });
-        ScrollReveal().reveal('.presentation__description', { origin: 'left' });
-        ScrollReveal().reveal('.target__img img', { origin: 'bottom' });
-        ScrollReveal().reveal('.target__img img', { duration: 2200 });
-        ScrollReveal().reveal('.content', { interval: 2000 });
-        ScrollReveal().reveal('.content', { origin: 'bottom' });
-        ScrollReveal().reveal('.target__description', { origin: 'bottom' });
-        ScrollReveal().reveal('#name', { origin: 'bottom' });
-        ScrollReveal().reveal('#email', { origin: 'bottom', delay: '500' });
-        ScrollReveal().reveal('#subject', { origin: 'bottom', delay: '500' });
-        ScrollReveal().reveal('#message', { origin: 'bottom', delay: '500' });
-        ScrollReveal().reveal('.about', { origin: 'right' });
-        ScrollReveal().reveal('.content',{ easing: 'ease-in-out' });
+      ScrollReveal({ distance: "60px" });
+      ScrollReveal().reveal(".presentation__description", { duration: 2200 });
+      ScrollReveal().reveal(".presentation__description", { origin: "left" });
+      ScrollReveal().reveal(".target__img img", { origin: "bottom" });
+      ScrollReveal().reveal(".target__img img", { duration: 2200 });
+      ScrollReveal().reveal(".content", { interval: 2000 });
+      ScrollReveal().reveal(".content", { origin: "bottom" });
+      ScrollReveal().reveal(".target__description", { origin: "bottom" });
+      ScrollReveal().reveal("#name", { origin: "bottom" });
+      ScrollReveal().reveal("#email", { origin: "bottom", delay: "500" });
+      ScrollReveal().reveal("#subject", { origin: "bottom", delay: "500" });
+      ScrollReveal().reveal("#message", { origin: "bottom", delay: "500" });
+      ScrollReveal().reveal(".about", { origin: "right" });
+      ScrollReveal().reveal(".content", { easing: "ease-in-out" });
     </script>
-<script src="https://carrier.formcarry.com/js/v1.js"></script>
-<script>
-  formcarry({
-    // replace this "you-form-id-in-formcarry" with your form id that you can get it from the dashboard.
-    form: "9S9V-OwaAb",
-    // id or class name of the form element, only form element allowed
-    // works with css selectors
-    // # <= for id
-    // . <= for class
-   element: "#my-formcarry",
-    extraData: {
-      // add whatever you want
-      screenSize: window.screen.width + " " +window.screen.height,
-      language: window.navigator.language,
-    },
-    // Success callback, you can show alert messages
-    // or redirect the user in this function
-    onSuccess: function(response) {
-        console.log(response)
-      if(response.code === 200) {
-        document.querySelector(".formcarry__check__icon").style.display = "flex";
-        setTimeout(() => {
-            document.querySelector(".formcarry__check__icon").style.display = "none";
-        }, 3000)
-      }
-    },
-    // Error callback, a good place to show errors 🗿
-    onError: function(error) {
-        console.log(response)
-        if(error.code !== 200) {
-            document.querySelector(".formcarry__close__icon").style.display = "flex";
+    <script src="https://carrier.formcarry.com/js/v1.js"></script>
+    <script>
+      formcarry({
+        // replace this "you-form-id-in-formcarry" with your form id that you can get it from the dashboard.
+        form: "9S9V-OwaAb",
+        // id or class name of the form element, only form element allowed
+        // works with css selectors
+        // # <= for id
+        // . <= for class
+        element: "#my-formcarry",
+        extraData: {
+          // add whatever you want
+          screenSize: window.screen.width + " " + window.screen.height,
+          language: window.navigator.language,
+        },
+        // Success callback, you can show alert messages
+        // or redirect the user in this function
+        onSuccess: function (response) {
+          console.log(response);
+          if (response.code === 200) {
+            document.querySelector(".formcarry__check__icon").style.display =
+              "flex";
+            setTimeout(() => {
+              document.querySelector(".formcarry__check__icon").style.display =
+                "none";
+            }, 3000);
+          }
+        },
+        // Error callback, a good place to show errors 🗿
+        onError: function (error) {
+          console.log(response);
+          if (error.code !== 200) {
+            document.querySelector(".formcarry__close__icon").style.display =
+              "flex";
 
             setTimeout(() => {
-            document.querySelector(".formcarry__close__icon").style.display = "none";
-        }, 3000)
-      }
-    }
-  });
-</script>
-<script src="./scripts.js"></script>
-<!-- Default Statcounter code for Educad fase beta https://danielndong.github.io/dani-educad.github.io/ -->
-<script type="text/javascript">
-    var sc_project=12917287;
-    var sc_invisible=1;
-    var sc_security="bae4bc04";
+              document.querySelector(".formcarry__close__icon").style.display =
+                "none";
+            }, 3000);
+          }
+        },
+      });
     </script>
-    <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
-    <noscript><div class="statcounter"><a title="real time web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12917287/0/bae4bc04/1/" alt="real time web analytics" referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+    <script src="./scripts.js"></script>
+    <!-- Default Statcounter code for Educad fase beta https://danielndong.github.io/dani-educad.github.io/ -->
+    <script type="text/javascript">
+      var sc_project = 12917287;
+      var sc_invisible = 1;
+      var sc_security = "bae4bc04";
+    </script>
+    <script
+      type="text/javascript"
+      src="https://www.statcounter.com/counter/counter.js"
+      async
+    ></script>
+    <noscript
+      ><div class="statcounter">
+        <a
+          title="real time web analytics"
+          href="https://statcounter.com/"
+          target="_blank"
+          ><img
+            class="statcounter"
+            src="https://c.statcounter.com/12917287/0/bae4bc04/1/"
+            alt="real time web analytics"
+            referrerpolicy="no-referrer-when-downgrade"
+        /></a></div
+    ></noscript>
     <!-- End of Statcounter Code -->
-</body>
+  </body>
 </html>

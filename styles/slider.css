@@ -1,0 +1,271 @@
+.text-certificacion {
+    font-size: 16px !important;
+}
+
+a.enlace-autoconsum {
+    background-color: #ffde00;
+    padding: .3rem 1rem;
+    font-weight: 800;
+}
+a.enlace-autoconsum:hover {
+    text-decoration: underline;
+}
+
+.collaborate-container{
+display: flex;
+flex-direction: column;
+padding: 0px;
+margin-top: 40px;
+position: relative;
+}
+
+.collaborate__info{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+margin-bottom: 25px;
+}
+
+.what__question{
+margin-bottom: 25px !important;
+}
+
+.info__description{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.description__paragraph{
+width: 50%;
+padding: 10px;
+text-align: center;
+width: 80%;
+}
+
+.collaborate__collaborate{
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+width: 100%;
+border-radius: 10px;
+overflow-x: scroll;
+scroll-snap-type: x mandatory;
+}
+
+.collaborate__scroll{
+display: flex;
+flex-direction:row;
+width: auto;
+height: 363px;
+overflow-x: auto;
+overflow-y: hidden;
+scroll-behavior: smooth;
+}
+
+.collaborate__scroll::-webkit-scrollbar {
+display: none;
+}
+
+
+.scroll__item{
+display: flex;
+height: 325px;
+width: 302px;
+margin-right: 30px;
+box-shadow: -6px 19px 13px 5px #bcc2d9;
+border-radius: 10px;
+overflow: hidden;
+}
+
+.scroll__item a {
+    color: #000;
+    text-decoration: none;
+}
+
+.scroll-item__content{
+display: none;
+width: 335px;
+height: 100%;
+}
+
+.scroll-item__content--active{
+display: flex !important;
+flex-direction: column;
+background: rgb(255, 255, 255);
+padding: 2.2rem 1.9rem;
+}
+
+.collaborate p.content__title{
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    text-align: start;
+    font-weight: 400;
+}
+
+.content__description{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+margin-top: 15px;
+}
+
+.description__item{
+margin-bottom: 10px;
+text-align: justify;
+}
+
+.separator{
+height: 90px;
+}
+
+.highlight{
+font-size: 22px;
+align-self: flex-end;
+}
+
+.border-bot{
+margin-bottom: 15px;
+}
+
+.collaborate__controls{
+display: flex;
+flex-direction: row;
+justify-content:space-between;
+width: 100%;
+padding: 15px 10px;
+}
+
+.control{
+height: 30px !important;
+cursor: pointer;
+}
+
+
+.controls__back-arrow{
+transform: rotate(180deg);
+}
+
+b {
+font-weight: 900;
+text-shadow: 0.3px 0.3px black;
+}
+ 
+@media  screen and (min-width: 767px){ 
+
+    .collaborate-container{
+        padding: 20px;
+        }
+.collaborate__info{
+    align-items: center;
+    justify-content: flex-start;
+    width: 35%;
+}
+
+.what__question{
+    margin-bottom: 40px !important;
+}
+
+.info__title .question-mark{
+    font-size: 120px;
+    line-height: 0.9;
+}
+
+.description__paragraph{
+    text-align: right;
+    font-size: 22px;
+    width: 75%;
+    line-height: 1.5;
+}
+
+.collaborate__collaborate{
+   /* width: 65%;*/
+    overflow-x: hidden;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+.collaborate__scroll{
+    width: auto;
+    height: 478px;
+    overflow: auto;
+    overflow-y: hidden;
+}
+
+.scroll__item{
+    height: 450px;
+    width: 363px;
+    box-shadow: -6px 19px 13px 5px #bcc2d9;
+}
+
+.scroll__item--last{
+    margin-right: 0;
+}
+
+.scroll-item__content--active{
+    width: 100%;
+    padding: 48px 40px;
+}
+
+.content__description{
+    align-items: flex-start;
+}
+
+.description__item {
+    width: 90%;
+    font-size: 20px
+}
+
+/* .collaborate__controls{
+    position: sticky;
+    bottom: 40px;
+    left: 0;
+    z-index: 1;
+} */
+
+.border-bot{
+    margin-bottom: 35px;
+}
+
+}
+
+.scroll__item--item1 {
+/* background-image: url('https://venersol.com/wp-content/uploads/2023/04/solar-panels-1477987-scaled.jpg'); */
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.scroll__item--item2 {
+/* background-image: url('https://venersol.com/wp-content/uploads/2023/04/autoconsum-industrial-scaled.jpg'); */
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.scroll__item--item3 {
+/* background-image: url('https://venersol.com/wp-content/uploads/2023/04/bateries-scaled.jpg'); */
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.scroll__item--item4 {
+/* background-image: url('https://venersol.com/wp-content/uploads/2023/04/comunitats-energ.jpg'); */
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.scroll__item--item5 {
+/* background-image: url('https://venersol.com/wp-content/uploads/2023/04/project2-solarField.jpg'); */
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.scroll__item--item6 {
+/* background-image: url('https://venersol.com/wp-content/uploads/2023/04/hibridacions.jpg'); */
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}

@@ -1,0 +1,39 @@
+:root {
+      /* COLORS */
+  --color-orange: #f98113;
+  --color-carne: #fff8f0;
+  --color-darkBlue: #52758b;
+  --color-blue: #0f0d3e;
+  --color-blue-active: #0b2031;
+  --color-white: #ffffff;
+  --color-bg: #f6f7fb;
+
+  --color-gray: #474747;
+  --color-grayLight: #afb9c4;
+  --color-darkGray: rgb(41, 41, 41);
+
+  --color-lila: #9700ff;
+
+  /* LINKS */
+  --link: rgb(87, 87, 87);
+  --link--active: rgb(29, 56, 114);
+
+  /* BUTTON TEXT */
+  --color-button-text: #8fa5b1;
+
+  /* BORDER */
+  --border-radius: 4px;
+  --border-wp-radius: 15px;
+
+  /* H2 */
+  --title-size: 1.8rem;
+    /* Labels, placeholder and text */
+    --input-color: #626d7a;
+    --input-text-color: #3A3A3A;
+
+    /* border and outline color */
+    --border-color: #17a9ec;
+
+    /* Barra de progreso en vista desktop */
+    --progress-menu-items: #8ba6bd;
+}

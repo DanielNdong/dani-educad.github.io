@@ -1,0 +1,20 @@
+textarea {
+    display: block;
+    width: 94%;  
+    max-width: 645px !important;
+    min-height: 130px;
+    padding: .8rem 1rem;
+    font-size: .8rem;
+    border-radius: 6px;  
+    outline: solid .1rem #dbdbd8;
+    border: none;
+    color: var(--input-color);
+}
+textarea:focus {
+    outline: solid 2px #17a9ec !important;
+    border: none
+}
+::placeholder{
+    color: var(--input-color);
+}
+

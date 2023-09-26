@@ -1,0 +1,444 @@
+:root {
+    /* Establecemos las dimensiones del ancho del contenedor del slider que contiene al form */
+    --form-mobile-width: 90%;
+    --form-tablet-width: 100%;
+}
+
+main > section {
+    display: block;
+}
+
+.sections label > span {
+    display: inline-block;
+}
+
+/* 
+.textarea__section label {
+    max-width: none;
+} */
+/* .textarea__section label textarea {
+    max-width: 645px;
+} */
+
+.sections {
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: end;
+    gap: 10px;
+    padding: .4rem 0;
+}
+
+.progress__menu {
+    display: block;
+}
+.progress__menu ul {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    counter-reset: progress;
+    gap: 20px;
+}
+.progress__menu > p {
+    margin: 0;
+    padding: 2rem 0;
+    color: #27517d;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+}
+.progress__menu > p > span {
+    font-weight: 600;
+    display: block;
+    font-size: 2rem;
+}
+
+.register__form__wrapper {
+    position: relative;
+    margin: auto;
+    padding: 2rem 0 0 .1rem;
+    width: 88%;
+    max-width: 690px;
+    overflow: hidden;
+}
+
+form#my-formcarry {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.register__form__scroll {
+    display: flex;
+    width: 2765px;
+    padding-left: 11px;
+    gap: 30px;
+    transition: all .1s ease-in-out;
+}
+
+.register_section {
+    opacity: 0;
+    width: var(--form-mobile-width);
+    padding: 2rem 0;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: grid;
+    align-items: start;
+    grid-template-rows: repeat(5, max-content);
+    justify-self: center;
+    pointer-events: none;
+}
+.register_section--show {
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.register_section > h2 {
+    padding: 1rem 1rem .3rem 0;
+    color: #27517d;
+    font-weight: 500;
+    font-size: .9rem;
+}
+.aviso__campos {   
+    display: inline-block; 
+    font-size: .6rem;
+    color: gray;
+    padding-bottom: 1rem;
+}
+.aviso__campos > span {
+    color: red;
+    padding:  0 .2rem 0 0;
+}
+
+.register-link-item {
+    position: relative;
+    display: inline-block;
+    max-width: 62px;
+    text-align: center;
+}
+
+.register-link-item::before {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    top: 25px;
+    width: 20px;
+    height: 20px;
+    left: calc(50% - 20px/2);
+    border: solid 1px var(--input-color);
+    text-align: center;
+    line-height: 20px;
+    font-size: .6rem;
+    font-weight: 600;
+    border-radius: 20px;
+    color: var(--input-color);
+}
+
+.progress__menu .register-link-item::before {
+    content: counter(progress);
+    counter-increment: progress;
+}
+
+/* Establecemos un orden */
+.personal {
+    order: 2;
+}
+
+.aditional {
+    order: 3;
+}
+
+.education {
+    order: 4;
+}
+
+.user {
+    order: 5;
+}
+.user > h2 {
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+.user > h2 b {
+    font-weight: 700;
+}
+.user .sections p {
+    font-size: 14px;
+    color: #3a3a3a;
+    margin: 0 0 1.5rem;
+}
+.user .sections > label {
+    font-size: .8rem;
+    color: gray;
+    max-width: none;
+}
+.user .sections > label span {
+    color: rgb(52, 52, 52);
+    text-decoration: underline;
+}
+.user > .sections >  label > p {
+    display: inline;
+    color: #575757;
+    font-size: .7rem;
+}
+.register_section > .form__navigation button {
+    padding: .4rem 1rem;
+    background-color: rgb(28, 55, 173);
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-size: .8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.goToFirstPosition {
+    order: 1;
+}
+
+#personal:target.register-link-item::before {
+    border-color: var(--border-color);
+    color: var(--border-color)
+}
+
+#aditional:target.register-link-item::before {
+    border-color: var(--border-color);
+    color: var(--border-color)
+}
+
+#education:target.register-link-item::before {
+    border-color: var(--border-color);
+    color: var(--border-color)
+}
+
+#userInfo:target.register-link-item::before {
+    border-color: var(--border-color);
+    color: var(--border-color)
+}
+
+.register-link-item a {
+    display: block;
+    font-size: .5rem;
+    text-decoration: none;
+    color: var(--input-color);
+}
+
+.form__navigation {
+    display: flex;
+    padding: 1.8rem 1rem .4rem 0;
+    gap: 10px;
+}
+
+.form__navigation a {
+    display: block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    padding: .6rem 1rem;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+.form__navigation .prev {
+    background-color: var(--input-color);
+    transition: all .2s ease-in-out;
+}
+
+.form__navigation a.prev:hover {
+    background-color: var(--input-text-color);
+    transition: all .2s ease-in-out;
+}
+
+.form__navigation a.prev:active {
+    background-color: rgb(71, 71, 71);
+}
+
+.form__navigation .next {
+    background-color: rgb(28, 55, 173);
+    transition: all .2s ease-in-out;
+}
+
+.form__navigation a.next:hover {
+    background-color: rgb(22, 45, 148);
+    transition: all .2s ease-in-out;
+}
+
+.form__navigation a.next:active {
+    background-color: rgb(39, 65, 184);
+}
+
+.personal .form__navigation .prev {
+    outline: solid .5px var(--input-color);
+    background-color: #fff;
+    color: var(--input-color);
+    font-weight: 400;
+    transition: background-color .2s ease-in-out;
+}
+.personal .form__navigation .prev:hover {
+    color: #fff;
+    outline: none;
+    transition: all .2s ease-in-out;
+}
+
+
+
+/* @media screen and (min-width: 414) {
+    .register__form__scroll {
+        width: 1656px
+    }
+} */
+
+@media screen and (min-width: 767px) {
+
+    .sections {
+        justify-content: start;
+    }
+
+    .register__form__scroll {
+        width: auto;
+    }
+
+    .progress__menu ul {
+        gap: 40px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .sections {
+        width: 773px;
+    }
+    .user .sections p {
+        width: 700px;
+    }
+}
+@media screen and (min-width: 1300px) {
+   
+    main > section {
+        display: flex;
+    }
+
+    .sections {
+        width: 800px;
+    }
+
+    .progress__menu {
+        width: 400px;
+        height: 100vh;
+        gap: 20px;
+        display: grid;
+        background-color: var(--color-blue-active);
+        grid-template-rows: max-content;
+    }
+
+    .progress__menu h2 {
+        color: #f7f7f7;
+        text-align: start;
+        width: 317px;
+        padding: 5rem 2rem 1rem;
+        margin: 0;
+        font-size: 1.6rem;
+        line-height: 35px;
+        font-weight: 600;
+    }
+
+    .progress__menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: 3rem 3rem 0 5rem;
+        gap: 68px;
+        width: 100%;
+        
+    }
+    .progress__menu > p {
+        color: #fff;
+        padding: 3rem 1.3rem 0;
+    }
+    .progress__menu > p .title {
+        font-weight: 800;
+        display: block;
+        font-size: 2.4rem;
+        line-height: 1.6;
+    }
+    .user  p {
+        width: 740px;
+        max-width: 750px;
+    }
+
+    .register__form__wrapper {
+        max-width: none;
+        margin: 0 auto;
+        /* padding-left: 30px; */
+    }
+
+ /*    .register__form__scroll {
+        padding: 0;
+        width: auto;
+    } */
+
+ /*    form {
+        width: 685px !important;
+        overflow: hidden;
+    } */
+
+    .register_section {
+        padding: 8rem 0;
+        margin-left: 4rem;
+    }
+
+    .register-link-item {
+        max-width: 2000px;
+    }
+
+    .register-link-item a {
+        font-size: 1.2rem;
+        color: var(--progress-menu-items);
+        text-align: start;
+    }
+    #personal:target.register-link-item a {
+        color: #fff;
+    }
+    #aditional:target.register-link-item a {
+        color: #fff;
+    }
+    #education:target.register-link-item a {
+        color: #fff;
+    }
+    #userInfo:target.register-link-item a {
+        color: #fff;
+    }
+
+
+    #personal:target.register-link-item::before {
+        border-color: #fff;
+        color: #fff;
+    }
+    #aditional:target.register-link-item::before {
+        border-color: #fff;
+        color: #fff;
+    }
+    #education:target.register-link-item::before {
+        border-color: #fff;
+        color: #fff;
+    }
+    #userInfo:target.register-link-item::before {
+        border-color: #fff;
+        color: #fff;
+    }
+
+    .progress__menu .register-link-item::before {
+        counter-increment: progress;
+        content: counter(progress);
+        width: 40px;
+        height: 40px;
+        top: -13px;
+        left: -55px;
+        border-radius: 50px;
+        border-width: 2px;
+        border-color: var(--progress-menu-items);
+        line-height: 40px;
+        font-size: 1rem;
+        color: var(--progress-menu-items);
+    }
+}

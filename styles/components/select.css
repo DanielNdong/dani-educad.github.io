@@ -1,0 +1,28 @@
+select {
+    display: block;
+    width: 98%;  
+    padding: .8rem 1rem;
+    font-size: .8rem;
+    border-radius: 6px;  
+    outline: solid .1rem #dbdbd8;
+    border: none;
+    color: var(--input-color);
+}
+ [type="select"] option {
+    padding: .3rem 1.4rem;
+    background-color: red;
+}
+select:focus {
+    outline: solid 2px #17a9ec !important;
+    border: none
+}
+::placeholder{
+    color: var(--input-color);
+}
+
+@media screen and (min-width: 726px){
+    select {
+        min-width: 120px;
+        max-width: 320px;
+    } 
+}
