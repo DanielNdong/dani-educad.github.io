@@ -53,10 +53,19 @@ textTemplate.innerHTML = `
     `;
 
     class InputText extends HTMLElement {
+        
+        static formAssociated = true;
+        
     constructor(){
         super();
-        this.root = this.attachShadow({ mode: 'open' });
-        
+        this.shadow = this.attachShadow({ mode: 'closed' });
+        this.internals = this.attachInternals();
+        this.setValue('');
+    }
+
+    setValue(v) {
+        this.value = v;
+        this.internals.setFormValue(v);
     }
 
     attributeChangedCallback(attr, oldAttr, newAttr){
@@ -71,14 +80,21 @@ textTemplate.innerHTML = `
     }
     
     connectedCallback() {
-        this.render()
-        this.elements()
-        this.update()
+        this.render();
+        this.elements();
+        this.events();
+        this.update();
     }
     
     elements() {
-        this.label = this.root.querySelector('span');
-        this.input = this.root.querySelector('input');
+        this.label = this.shadow.querySelector('span');
+        this.input = this.shadow.querySelector('input');
+    }
+
+    events() {
+        this.input.addEventListener('input', e => {
+            this.setValue(e.target.value1);
+        });
     }
     
     update() {
@@ -90,7 +106,7 @@ textTemplate.innerHTML = `
 
     render() {
         let clone = textTemplate.cloneNode(true)
-        this.root.append(clone)
+        this.shadow.append(clone)
     }
     
 }
