@@ -82,7 +82,9 @@ textTemplate.innerHTML = `
     connectedCallback() {
         this.render();
         this.elements();
-        this.events();
+        this.shadow.addEventListener('input', e => {
+            this.setValue(e.target.value);
+        });
         this.update();
     }
     
@@ -91,11 +93,7 @@ textTemplate.innerHTML = `
         this.input = this.shadow.querySelector('input');
     }
 
-    events() {
-        this.input.addEventListener('input', e => {
-            this.setValue(e.target.value);
-        });
-    }
+    
     
     update() {
         this.label.innerText = inputTextAttributes.label;
