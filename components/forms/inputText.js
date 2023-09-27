@@ -93,7 +93,7 @@ textTemplate.innerHTML = `
 
     events() {
         this.input.addEventListener('input', e => {
-            this.setValue(e.target.value1);
+            this.setValue(e.target.value);
         });
     }
     
