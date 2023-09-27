@@ -71,7 +71,7 @@ textTemplate.innerHTML = `
     attributeChangedCallback(attr, oldAttr, newAttr){
         if(attr === 'label') inputTextAttributes.label = newAttr;
         if(attr === 'placeholdertext') inputTextAttributes.placeholder = newAttr;
-        if(attr === 'inputName') inputTextAttributes.nameInput = newAttr;
+        if(attr === 'inputname') inputTextAttributes.nameInput = newAttr;
       /*   if(attr === 'hasLabel') */
 }
 
