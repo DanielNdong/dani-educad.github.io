@@ -82,9 +82,16 @@ textTemplate.innerHTML = `
     connectedCallback() {
         this.render();
         this.elements();
-        this.shadow.addEventListener('input', e => {
+
+        this.internals.form.addEventListener('submit', e => {
             this.setValue(e.target.value);
         });
+
+        this.internals.form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      console.log("Formulario enviado");
+    });
+        
         this.update();
     }
     
@@ -103,6 +110,7 @@ textTemplate.innerHTML = `
     }
 
     render() {
+        console.log(this.internals.form);
         let clone = textTemplate.cloneNode(true)
         this.shadow.append(clone)
     }
