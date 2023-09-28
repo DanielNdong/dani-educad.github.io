@@ -192,23 +192,12 @@
             // Success callback, you can show alert messages
             // or redirect the user in this function
             onSuccess: function (response) {
-                document.querySelector('#my-formcarry').reset();
-                if(response.status === 'success') {
-                    document.querySelector("#goToEducad").style.display = "flex";
-                  /*   setTimeout(()=>{
-                        document.querySelector("[name=enviar]").textContent = "Enviar";
-                    },3000)
-                    */
-                }
+              
                 console.log(`Mensaje despues del onSuccess ${response} ${response.status}`, response, response.status)
             },
             // Error callback, a good place to show errors 🗿
             onError: function (error) {
-                console.log(error)
-                document.querySelector(".mssj__error").style.display = "block";
-                  setTimeout(()=>{
-                        document.querySelector(".mssj__error").style.display = "none";
-                    },3000)
+
             }
         });  
     </script>
