@@ -63,7 +63,7 @@
 
                             </div>
                             <div class="sections">
-                                    <input-text class="inline" placeholdertext="Semu, Alcaide, Ela Nguema..." label="Dirección / Barrio"></input-text>
+                                    <input-text class="inline" inputname="barrio" placeholdertext="Semu, Alcaide, Ela Nguema..." label="Dirección / Barrio"></input-text>
                                 <label for="selectCiudad">
                                     <p class="aviso__campos"><span>*</span></p>
                                     <span>Ciudad</span>
@@ -90,9 +90,9 @@
                         <div class="aditional register_section" data-id="2">
                             <h2>INFORMACIÓN ADICIONAL</h2>
                             <div class="sections">
-                                <input-text class="inline" placeholdertext="Nombre del tutor"
+                                <input-text class="inline" inputname="tutor" placeholdertext="Nombre del tutor"
                                     label="Padre o tutor (Si es menor)" hasLabel="true"></input-text>
-                                <input-text class="inline" placeholdertext="¿Es tu padre, madre, tio...?"
+                                <input-text class="inline" inputname="afinidad" placeholdertext="¿Es tu padre, madre, tio...?"
                                     label="Afinidad" hasLabel="true"></input-text>
                             </div>
                             <div class="sections">
@@ -110,7 +110,7 @@
                         <div class="education register_section " data-id="3">
                             <h2>EDUCACIÓN</h2>
                             <div class="sections">
-                                <input-text class="inline" placeholdertext="Nombre del centro" label="Centro-Universidad"
+                                <input-text class="inline" inputname="centro" placeholdertext="Nombre del centro" label="Centro-Universidad"
                                     hasLabel="true"></input-text>
                                 <label for"selectNivelAcademico">
                                     <span>Nivel Académico</span>
@@ -130,13 +130,13 @@
                                         <option value="tecnologia">Tecnología</option>
                                     </select> 
                                 </label>
-                                <input-text class="inline" placeholdertext="Curso" label="Curso"
+                                <input-text class="inline" inputname="curso" placeholdertext="Curso" label="Curso"
                                     hasLabel="true"></input-text>
                                 <input-number class="inline" placeholdertext="Teléfono" label="Teléfono(Opcional)"
                                     hasLabel="false"></input-email>
                             </div>
                             <div class="sections">
-                                <input-text class="inline" aria-placeholdertext="Semu, Alcaide, Ela Nguema..." label="Dirección / Barrio"></input-text>
+                                <input-text class="inline" inputname="barrioCentro" aria-placeholdertext="Semu, Alcaide, Ela Nguema..." label="Dirección / Barrio"></input-text>
                                 <label for="selectCiudad">
                                     <span>Ciudad</span>
                                     <select name="select" id="selectCiudad">
@@ -158,7 +158,7 @@
                                <p>Te damos la bienvenida a la plataforma de aprendizaje en line Educad. Para completar el registro debes aceptar los terminos y condiciones y serás parte de Educad.</p>
                             </div>
                             <div class="sections">
-                                <label for="checkbox">
+                                <label for="terms">
                                     <input type="checkbox" name="terms" id="terms" required>
                                     <p>Aceptas los <span>Términos y Condiciones</span> y las <span>Política de Privacidad</span> y uso de datos de la plataforma Educad.</p>
                                 </label>
