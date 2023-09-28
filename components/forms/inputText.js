@@ -90,9 +90,9 @@ textTemplate.innerHTML = `
         this.internals.form.addEventListener("submit", (event) => {
       event.preventDefault();
               console.log("Estoy dentro del web Component -> ", this.internals, this.internals.form);
-              console.log("asignamos los valores al input")
+              console.log(this.input, this.input.value " asignamos los valores al input")
               this.setValue(event.target.value);
-              console.log("El valor del input es -> ", event.target.value)
+              console.log("El valor del input es -> ", event.target)
         });
         
         this.update();
