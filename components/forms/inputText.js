@@ -45,11 +45,13 @@ textTemplate.innerHTML = `
         font-size: .6rem
     }
     </style>
-<label>
-    <p class="required">*</p>
-    <span>${inputTextAttributes.label}</span>
-    <input type="text" name="${inputTextAttributes.nameInput}" id="${inputTextAttributes.nameInput}" placeholder="${inputTextAttributes.placeholder}" required/>
-</label>
+    <form method="post">
+        <label>
+            <p class="required">*</p>
+            <span>${inputTextAttributes.label}</span>
+            <input type="text" name="${inputTextAttributes.nameInput}" id="${inputTextAttributes.nameInput}" placeholder="${inputTextAttributes.placeholder}" required/>
+        </label>
+    </form>
     `;
 
     class InputText extends HTMLElement {
