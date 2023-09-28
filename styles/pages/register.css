@@ -63,7 +63,7 @@ main > section {
     overflow: hidden;
 }
 
-form#my-formcarry {
+form#formulario-registro {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
