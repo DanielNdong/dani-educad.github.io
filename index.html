@@ -541,7 +541,6 @@
       </div>
     </footer>
     <script>
-      ScrollReveal({ distance: "60px" });
       ScrollReveal().reveal(".presentation__description", { duration: 2200 });
       ScrollReveal().reveal(".presentation__description", { origin: "left" });
       ScrollReveal().reveal(".target__img img", { origin: "bottom" });
@@ -557,48 +556,7 @@
       ScrollReveal().reveal(".content", { easing: "ease-in-out" });
     </script>
     <script src="https://carrier.formcarry.com/js/v1.js"></script>
-    <script>
-      formcarry({
-        // replace this "you-form-id-in-formcarry" with your form id that you can get it from the dashboard.
-        form: "9S9V-OwaAb",
-        // id or class name of the form element, only form element allowed
-        // works with css selectors
-        // # <= for id
-        // . <= for class
-        element: "#my-formcarry",
-        extraData: {
-          // add whatever you want
-          screenSize: window.screen.width + " " + window.screen.height,
-          language: window.navigator.language,
-        },
-        // Success callback, you can show alert messages
-        // or redirect the user in this function
-        onSuccess: function (response) {
-          console.log(response);
-          if (response.code === 200) {
-            document.querySelector(".formcarry__check__icon").style.display =
-              "flex";
-            setTimeout(() => {
-              document.querySelector(".formcarry__check__icon").style.display =
-                "none";
-            }, 3000);
-          }
-        },
-        // Error callback, a good place to show errors 🗿
-        onError: function (error) {
-          console.log(response);
-          if (error.code !== 200) {
-            document.querySelector(".formcarry__close__icon").style.display =
-              "flex";
-
-            setTimeout(() => {
-              document.querySelector(".formcarry__close__icon").style.display =
-                "none";
-            }, 3000);
-          }
-        },
-      });
-    </script>
+   
     <script src="./scripts.js"></script>
     <!-- Default Statcounter code for Educad fase beta https://danielndong.github.io/dani-educad.github.io/ -->
     <script type="text/javascript">
