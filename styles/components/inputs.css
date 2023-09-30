@@ -1,10 +1,10 @@
 @media screen and (min-width: 726px){
-input {
+input:not([type=checkbox]) {
         max-width: 320px;
         min-width: 120px;
     } 
 }
- input {
+ input:not([type=checkbox]) {
         display: block;
         width: 98%;  
         padding: .8rem 1rem;
@@ -20,7 +20,7 @@ input {
         margin-bottom: .6rem;
         color: var(--input-color);
     }
-    input:focus {
+    input:not([type=checkbox]):focus {
         outline: solid 2px #17a9ec !important;
         border: none
     }
