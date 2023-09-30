@@ -43,31 +43,46 @@
                             <h2>DATOS DEL ALUMNO</h2>
                             <p class="aviso__campos"><span>*</span>Importante, asegurate de rellenar todos los campos antes de guardar.</p>
                             <div class="sections">
-                                <input-text class="inline" inputname="name" placeholdertext="Tu nombre" label="Nombre"
-                                    hasLabel="true"></input-text>
-                                <input-text class="inline"inputname="apellidos"  placeholdertext="Tus apellidos" label="Apellidos"
-                                    hasLabel="true"></input-text>
+                                 <label for="nombre">
+                                    <p class="required">*</p>
+                                    <span>Nombre</span>
+                                    <input type="text" name="name" id="nombre" placeholder="Tu nombre" required/>
+                                </label>
+                               <label for="apellidos">
+                                    <p class="required">*</p>
+                                    <span>Apellidos</span>
+                                    <input type="text" name="apellidos" id="apellidos" placeholder="Tus apellidos" required/>
+                                </label>
                             </div>
                             <div class="sections">
-                                <input-email class="inline" placeholdertext="Correo electrónico" label="Email"
-                                    hasLabel="false"></input-email>
-                                <input-number class="inline" placeholdertext="Tu número" label="Teléfono"
-                                    hasLabel="false"></input-email>
+                                <label for="email">
+                                    <p class="required">*</p>
+                                    <span>Correo electrónico</span>
+                                    <input type="text" name="email" id="email" placeholder="ejemplodeemail@gmail.com" required/>
+                                </label>
+                                <label for="telefono">
+                                    <span>Telefono(Opcional)</span>
+                                    <input type="text" name="telefono" id="telefono" placeholder="Ejm: 222112233"/>
+                                </label>
                             </div>
                             <div class="sections">
                                 <label for="date">
                                 <p class="aviso__campos"><span>*</span></p>
                                     <span>Fecha de Nacimiento</span>
-                                    <input type="date" name="" id="date">
+                                    <input type="date" name="fechaNacimiento" id="date" required>
                                 </label>
-
                             </div>
                             <div class="sections">
-                                    <input-text class="inline" inputname="barrio" placeholdertext="Semu, Alcaide, Ela Nguema..." label="Dirección / Barrio"></input-text>
+                                <label for="direccionAlumno">
+                                    <p class="required">*</p>
+                                    <span>Dirección del alumno</span>
+                                    <input type="text" name="direccionAlumno" id="direccionAlumno" placeholder="Ejm: Semu, Alcaide, Ela Nguema..." required/>
+                                </label>
                                 <label for="selectCiudad">
                                     <p class="aviso__campos"><span>*</span></p>
                                     <span>Ciudad</span>
-                                    <select name="select" id="selectCiudad">
+                                    <select name="select" id="selectCiudad" required>
+                                        <option>-- Selecciona tu ciudad --</option>
                                         <option value="malabo">Malabo</option>
                                         <option value="bata">Bata</option>
                                         <option value="mongomo">Mongomo</option>
@@ -76,9 +91,9 @@
                             </div>
                             <div class="sections textarea__section">
                                 <label for="description">
-                                    <span>Description</span>
+                                    <span>Description(Opcional)</span>
                                     <textarea name="description" id="description"
-                                        placeholder="Danos una descripcion de tu barrio"></textarea>
+                                        placeholder="Escribe otros detalles para ubicar tu barrio"></textarea>
                                 </label>
                             </div>
                             <div class="form__navigation">
@@ -90,16 +105,24 @@
                         <div class="aditional register_section" data-id="2">
                             <h2>INFORMACIÓN ADICIONAL</h2>
                             <div class="sections">
-                                <input-text class="inline" inputname="tutor" placeholdertext="Nombre del tutor"
-                                    label="Padre o tutor (Si es menor)" hasLabel="true"></input-text>
-                                <input-text class="inline" inputname="afinidad" placeholdertext="¿Es tu padre, madre, tio...?"
-                                    label="Afinidad" hasLabel="true"></input-text>
+                                 <label for="nombreTutor">
+                                    <span>Tutor(Opcional)</span>
+                                    <input type="text" name="nombreTutor" id="nombreTutor" placeholder="Nombre de tu tutor" required/>
+                                </label>
+                                 <label for="afinidad">
+                                    <span>Afinidad</span>
+                                    <input type="text" name="afinidad" id="afinidad" placeholder="Quien es tu tutor?" required/>
+                                </label>
                             </div>
                             <div class="sections">
-                                <input-number class="inline" placeholdertext="Tel: 222 345 329"
-                                    label="Contacto del tutor" hasLabel="false"></input-number>
-                                <input-number class="inline" placeholdertext="" label="Teléfono de emergencia"
-                                    hasLabel="false"></input-text>
+                                <label for="contactoTutor">
+                                    <span>Contacto del tutor</span>
+                                    <input type="text" name="contactoTutor" id="contactoTutor" placeholder="Tel: 222112233" required/>
+                                </label>
+                                <label for="contactoEmergencia">
+                                    <span>Numero de emergencia(Opciona)</span>
+                                    <input type="text" name="contactoEmergencia" id="contactoEmergencia" placeholder="Tel: 222112233" required/>
+                                </label>
                             </div>
                             <div class="form__navigation">
                                 <a href="./register.html#personal" class="prev">Atrás</a>
@@ -110,11 +133,14 @@
                         <div class="education register_section " data-id="3">
                             <h2>EDUCACIÓN</h2>
                             <div class="sections">
-                                <input-text class="inline" inputname="centro" placeholdertext="Nombre del centro" label="Centro-Universidad"
-                                    hasLabel="true"></input-text>
+                                <label for="nombreCentro">
+                                    <span>Centro de estudios</span>
+                                    <input type="text" name="nombreCentro" id="nombreCentro" placeholder="Nombre del centro/FP/Universidad" required/>
+                                </label>
                                 <label for"selectNivelAcademico">
                                     <span>Nivel Académico</span>
                                     <select name="selectNivelAcademico" id="selectNivelAcademico">
+                                        <option>-- Selecciona tu nivel --</option>
                                         <option value="primaria">Primaria</option>
                                         <option value="esba">ESBA</option>
                                         <option value="bachillerato">Bachillerato</option>
@@ -125,25 +151,21 @@
                                 <label for="selectRamaBachillerato">
                                     <span>Rama de Bachillerato</span>
                                 <select name="selectRamaBachillerato" id="selectRamaBachillerato">
+                                    <option>-- Selecciona tu rama --</option>
                                         <option value="humanidades">Humanidades</option>
                                         <option value="ciencias">Ciencias</option>
                                         <option value="tecnologia">Tecnología</option>
                                     </select> 
                                 </label>
-                                <input-text class="inline" inputname="curso" placeholdertext="Curso" label="Curso"
-                                    hasLabel="true"></input-text>
-                                <input-number class="inline" placeholdertext="Teléfono" label="Teléfono(Opcional)"
-                                    hasLabel="false"></input-email>
+                                <label for="curso">
+                                    <span>Curso</span>
+                                    <input type="number" name="curso" id="curso" placeholder="curso" required/>
+                                </label>
                             </div>
                             <div class="sections">
-                                <input-text class="inline" inputname="barrioCentro" aria-placeholdertext="Semu, Alcaide, Ela Nguema..." label="Dirección / Barrio"></input-text>
-                                <label for="selectCiudad">
-                                    <span>Ciudad</span>
-                                    <select name="select" id="selectCiudad">
-                                        <option value="malabo">Malabo</option>
-                                        <option value="bata">Bata</option>
-                                        <option value="mongomo">Mongomo</option>
-                                    </select>
+                                <label for="ubicacionCentro">
+                                    <span>direccionCentro</span>
+                                    <input type="text" name="direccionCentro" id="direccionCentro" placeholder="Dirección de tu centro" required/>
                                 </label>
                             </div>
                             <div class="form__navigation">
@@ -163,7 +185,6 @@
                                     <p>Aceptas los <span>Términos y Condiciones</span> y las <span>Política de Privacidad</span> y uso de datos de la plataforma Educad.</p>
                                 </label>
                             </div>
-
                             <div class="form__navigation">
                                 <a href="./register.html#education" class="prev">Atrás</a>
                                 <button type="submit" name="submit" id="submit">Regístrate</button>
