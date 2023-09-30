@@ -1,3 +1,38 @@
+@media screen and (min-width: 726px){
+input {
+        max-width: 320px;
+        min-width: 120px;
+    } 
+}
+ input {
+        display: block;
+        width: 98%;  
+        padding: .8rem 1rem;
+        font-size: .8rem;
+        border-radius: 6px;  
+        outline: solid .1rem #dbdbd8;
+        border: none;
+        color: var(--input-text-color);
+    }
+  label > span {
+        display: inline-block;
+        font-size: .75rem;
+        margin-bottom: .6rem;
+        color: var(--input-color);
+    }
+    input:focus {
+        outline: solid 2px #17a9ec !important;
+        border: none
+    }
+    ::placeholder{
+        color: var(--input-color);
+    }
+    .required {
+        display: inline-flex;
+        color: red;
+        font-size: .6rem
+    }
+
 input:focus {
     outline: solid 2px #17a9ec !important;
     border: none
