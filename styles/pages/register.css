@@ -313,9 +313,11 @@ form#formulario-registro {
     }
 }
 @media screen and (min-width: 1300px) {
-   
+   main {
+       height: 100%;
     main > section {
         display: flex;
+        height: 100%;
     }
 
     .sections {
@@ -324,7 +326,6 @@ form#formulario-registro {
 
     .progress__menu {
         width: 400px;
-        height: 100vh;
         gap: 20px;
         display: grid;
         background-color: var(--color-blue-active);
@@ -383,7 +384,7 @@ form#formulario-registro {
     } */
 
     .register_section {
-        padding: 8rem 0;
+        padding: 4rem 0;
         margin-left: 4rem;
     }
 
