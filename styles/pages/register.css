@@ -315,6 +315,7 @@ form#formulario-registro {
 @media screen and (min-width: 1300px) {
    main {
        height: 100%;
+   }
     main > section {
         display: flex;
         height: 100%;
