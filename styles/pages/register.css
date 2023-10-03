@@ -60,7 +60,7 @@ main > section {
     padding: 2rem 0 0 .1rem;
     width: 88%;
     max-width: 690px;
-    overflow: hidden;
+    overflow: auto;
 }
 
 form#formulario-registro {
