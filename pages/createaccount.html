@@ -1,0 +1,179 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Portal de Registro - Incribete y lleva tu aula de clase contigo</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/pages/register.css">
+    <script src="../components/forms/inputText.js"></script>
+    <script src="../components/forms/inputEmail.js"></script>
+    <script src="../components/forms/inputNumber.js"></script>
+    <script src="../components/forms/inputSelect.js"></script>
+    <link rel="stylesheet" href="../styles/components/select.css">
+    <link rel="stylesheet" href="../styles/components/inputDate.css">
+    <link rel="stylesheet" href="../styles/components/textarea.css">
+    <link rel="stylesheet" href="../styles/components/inputs.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <aside class="progress__menu">
+                <p>Portal de registro a la plataforma <span class="title">EDUCAD</span></p>
+                <ul>
+                    <li class="register-link-item" id="personal">
+                        <a href="http://">Datos personales</a>
+                    </li>
+                    <li class="register-link-item" id="aditional">
+                        <a href="http://">Datos del centro</a>
+                    </li>
+                    <li class="register-link-item" id="userInfo">
+                        <a href="http://">Completado!</a>
+                    </li>
+                </ul>
+            </aside>
+            <section class="register__form__wrapper">
+                <form id="formulario-registro">
+                        <!-- INFORMACIÓN PERSONAL -->
+                        <div class="personal register_section register_section--show" data-id="1">
+                            <h2>INFORMACIÓN PERSONAL</h2>
+                            <p class="aviso__campos"><span>*</span>Importante, asegurate de rellenar todos los campos antes de guardar.</p>
+                            <div class="sections">
+                                 <label for="nombre">
+                                    <p class="required">*</p>
+                                    <span>Nombre</span>
+                                    <input type="text" name="name" id="nombre" placeholder="Tu nombre" required/>
+                                </label>
+                               <label for="apellidos">
+                                    <p class="required">*</p>
+                                    <span>Apellidos</span>
+                                    <input type="text" name="apellidos" id="apellidos" placeholder="Tus apellidos" required/>
+                                </label>
+                            </div>
+                            <div class="sections">
+                                <label for="email">
+                                    <p class="required">*</p>
+                                    <span>Correo electrónico</span>
+                                    <input type="text" name="email" id="email" placeholder="ejemplodeemail@gmail.com" required/>
+                                </label>
+                                <label for="telefono">
+                                    <span>Telefono</span>
+                                    <input type="text" name="telefono" id="telefono" placeholder="Ejm: 222112233"/>
+                                </label>
+                            </div>
+                            <div class="sections">
+                                <label for="telefonoemergencia">
+                                    <span>Telefono</span>
+                                    <input type="text" name="telefonoemergencia" id="telefonoemergencia" placeholder="Ejm: 555232323"/>
+                                </label>
+                                <label for="date">
+                                <p class="aviso__campos"><span>*</span></p>
+                                    <span>Fecha de Nacimiento</span>
+                                    <input type="date" name="fechaNacimiento" id="date" required>
+                                </label>
+                                <label for="experiencia">
+                                <p class="aviso__campos"><span>*</span></p>
+                                    <span>Anos de experiencia</span>
+                                    <input type="number" name="experiencia" id="experiencia" required>
+                                </label>
+                            </div>
+                            <div class="sections">
+                                <label for="selectCiudad">
+                                    <p class="aviso__campos"><span>*</span></p>
+                                    <span>Ciudad</span>
+                                    <select name="select" id="selectCiudad" required>
+                                        <option>-- Selecciona tu ciudad --</option>
+                                        <option value="malabo">Malabo</option>
+                                        <option value="bata">Bata</option>
+                                        <option value="mongomo">Mongomo</option>
+                                    </select>
+                                </label>
+                                <label for="direccionprofesor">
+                                    <p class="required">*</p>
+                                    <span>Dirección</span>
+                                    <input type="text" name="direccionprofesor" id="direccionprofesor" placeholder="Ejm: Semu, Alcaide, Ela Nguema..." required/>
+                                </label>
+                            </div>
+                            <div class="sections textarea__section">
+                                <label for="description">
+                                    <span>Descripción de la ubicación(Opcional)</span>
+                                    <textarea name="description" id="description"
+                                    placeholder="Describenos tu ubicacion"></textarea>
+                                </label>
+                            </div>
+                            <div class="form__navigation">
+                                <a href="../index.html" class="prev">Salir</a>
+                                <a href="./register.html#aditional" class="next">Siguiente</a>
+                            </div>
+                        </div>
+                        <!-- DATOS DEL CENTRO -->
+                        <div class="education register_section " data-id="3">
+                            <h2>DATOS DEL CENTRO</h2>
+                            <div class="sections">
+                                <label for="nombreCentro">
+                                    <span>Instituto, Fp o Universidad</span>
+                                    <input type="text" name="nombreCentro" id="nombreCentro" placeholder="Nombre del centro/FP/Universidad" required/>
+                                </label>
+                                <label for"selectNivelAcademico">
+                                    <span>Nivel Académico</span>
+                                    <select name="selectNivelAcademico" id="selectNivelAcademico">
+                                        <option>-- Selecciona tu nivel --</option>
+                                        <option value="primaria">Primaria</option>
+                                        <option value="esba">ESBA</option>
+                                        <option value="bachillerato">Bachillerato</option>
+                                    </select>
+                                </label>  
+                            </div>
+                            <div class="sections">
+                                <label for="selectRamaBachillerato">
+                                    <span>Rama de Bachillerato</span>
+                                    <select name="selectRamaBachillerato" id="selectRamaBachillerato">
+                                    <option>-- Selecciona tu rama --</option>
+                                        <option value="humanidades">Humanidades</option>
+                                        <option value="ciencias">Ciencias</option>
+                                        <option value="tecnologia">Tecnología</option>
+                                    </select> 
+                                </label>
+                                <label for="curso">
+                                    <span>Curso</span>
+                                    <input type="number" name="curso" id="curso" placeholder="curso" required/>
+                                </label>
+                                  <label for="materia">
+                                    <span>Materia</span>
+                                    <input type="text" name="materia" id="materia" placeholder="Matematicas, Lengua, Economía..." required/>
+                                </label>                                                              
+                            </div>
+                            <div class="form__navigation">
+                                <a href="./register.html#aditional" class="prev">Atrás</a>
+                                <a href="./register.html#userInfo" class="next">Siguiente</a>
+                            </div>
+                        </div>
+                        <!-- ULTIMO PASO -->
+                        <div class="user register_section " data-id="4">
+                            <!-- <h2>BIENVENIDO A <b>EDUCAD</b></h2> -->
+                            <div class="sections">
+                               <p>Te damos la bienvenida a la plataforma de aprendizaje en linea Educad. Para completar el registro debes aceptar los terminos y condiciones y serás parte de Educad.</p>
+                            </div>
+                            <div class="sections">
+                                <label for="terms">
+                                    <input type="checkbox" name="terms" id="terms" required>
+                                    <p>Aceptas los <span>Términos y Condiciones</span> y las <span>Política de Privacidad</span> y uso de datos de la plataforma Educad.</p>
+                                </label>
+                            </div>
+                            <div class="form__navigation">
+                                <a href="./register.html#education" class="prev">Atrás</a>
+                                <button type="submit" name="submit" id="submit">Regístrate</button>
+                            </div>
+                        </div>
+                </form>
+            </section>
+        </section>
+    </main>
+    <script src="../js/formSlider/slider.js"></script>
+    <script src="https://carrier.formcarry.com/js/v1.js"></script>
+    <script src="../js/formcarryContact.js"></script>
+</body>
+
+</html>
