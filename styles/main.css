@@ -26,10 +26,7 @@ label {
   min-width: 120px;
   max-width: 320px;
 }
-/* width solo para los labels marcados con esta clase */
-.lnmax {
-   max-width: 140px;
-}
+
 label > span {
   display: block;
   font-size: 0.75rem;
@@ -102,6 +99,12 @@ h2 {
     max-width: 1420px;
   }
 
+@media screen and (min-wdth: 1300px) {
+  /* width solo para los labels marcados con esta clase */
+.lnmax {
+   max-width: 140px;
+}
 .ramaBach {
   display: none;
+}
 }
