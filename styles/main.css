@@ -28,7 +28,7 @@ label {
 }
 /* width solo para los labels marcados con esta clase */
 .lnmax {
-   max-width: 190px;
+   max-width: 140px;
 }
 label > span {
   display: block;
