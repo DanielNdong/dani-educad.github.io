@@ -102,5 +102,8 @@ h2 {
   display: none;
 }
 
-
+@media screen and (min-width: 1024px) {
+  .lnmax {
+    max-width: 140px;
+  }
 }
