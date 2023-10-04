@@ -26,6 +26,10 @@ label {
   min-width: 120px;
   max-width: 320px;
 }
+/* width solo para los labels marcados con esta clase */
+.lnmax {
+   max-width: 190px;
+}
 label > span {
   display: block;
   font-size: 0.75rem;
