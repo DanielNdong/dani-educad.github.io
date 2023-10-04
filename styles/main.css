@@ -101,10 +101,6 @@ h2 {
 .ramaBach {
   display: none;
 }
-@media screen and (min-wdth: 1300px) {
-  /* width solo para los labels marcados con esta clase */
-.lnmax {
-   max-width: 140px;
-}
+
 
 }
