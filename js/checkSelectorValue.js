@@ -3,8 +3,7 @@ const ramaBach = document.querySelector(".ramaBach");
 
 selectorElement.addEventListener("change", ()=> {
   const selectValue = document.querySelector(".nivelAcademico").value;
-  console.log("Cambio");
-  if(selectValue !== "bachillerato") {
+  if(selectValue === "bachillerato") {
       ramaBach.style.display = "initial";
   }
 })
