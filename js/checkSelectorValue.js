@@ -1,4 +1,4 @@
-const selectElement = document.querySelector(".nivelAcademico");
+const selectElement = document.querySelectorAll(".nivelAcademico");
 
 const selectLabel = document.querySelector(".labelNivelAcademico");
 const cursoLabel = document.querySelector(".cursoLabel");
@@ -6,9 +6,11 @@ const materiaLabel = document.querySelector(".materiaLabel");
 const ramaBach = document.querySelector(".ramaBach");
 
 /* Ocultamos o mostramos el select en caso de que la rama elegida sea 'bachillerato' */
-selectElement.addEventListener("change", ()=> {
+selectElement.forEach(item=>{
+  item.addEventListener("change", ()=> {
   const selectValue = document.querySelector(".nivelAcademico").value;
       ramaBach.style.display = selectValue === "bachillerato" ? 'initial' : 'none';
+  })
 })
 
 const addNewSubjectButton = document.querySelector(".appendSubject");
