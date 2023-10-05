@@ -9,9 +9,12 @@ const ramaBach = document.querySelector(".ramaBach");
 selectElement.addEventListener("change", ()=> {
   const selectValue = document.querySelector(".nivelAcademico").value;
       ramaBach.style.display = selectValue === "bachillerato" ? 'initial' : 'none';
-      appendNewsElements();
 })
 
+const addNewSubjectButton = document.querySelector("appendSubject");
+addNewSubjectButton.addEventListener("click", ()=> {
+ appendNewsElements();
+});
 
   /* Añadir mas materias que puede impartir el profesor */
 function appendNewsElements() {
