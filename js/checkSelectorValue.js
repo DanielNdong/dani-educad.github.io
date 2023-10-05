@@ -22,15 +22,20 @@ addNewSubjectButton.addEventListener("click", ()=> {
 function appendNewsElements() {
   let containerWrapper = document.querySelector(".otherSubjects");
   let wrapper = document.createElement("div");
+  let sections = document.createElement("div);
+                                        
   wrapper.classList.add("otherSubject__wrapper");
+  sections.classList.add("sections);                                    
   
   let selectClone = selectLabel.cloneNode(true);
   let cursoClone = cursoLabel.cloneNode(true);
   let materiaClone = materiaLabel.cloneNode(true);
   let ramaClone = ramaBach.cloneNode(true);
 
-  wrapper.appendChild(selectClone);
-  wrapper.appendChild(cursoClone);
+  sections.appendChild(selectClone);
+  sections.appendChild(cursoClone);
+  
+  wrapper.appendChild(sections);
   wrapper.appendChild(materiaClone);
   wrapper.appendChild(ramaClone);
 
