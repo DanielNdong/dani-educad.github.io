@@ -102,7 +102,7 @@ h2 {
   display: none;
 }
 
-button[type=button] {
+.appendSubject{
       width: 138px;
     display: flex;
     justify-content: center;
