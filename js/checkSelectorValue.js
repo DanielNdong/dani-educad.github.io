@@ -20,10 +20,10 @@ addNewSubjectButton.addEventListener("click", ()=> {
 function appendNewsElements() {
   let contenedor = document.querySelector(".otherSubjects");
   
-  let selectClone = selectLabel.cloneNode();
-  let cursoClone = cursoLabel.cloneNode();
-  let materiaClone = materiaLabel.cloneNode();
-  let ramaClone = ramaBach.cloneNode();
+  let selectClone = selectLabel.cloneNode(true);
+  let cursoClone = cursoLabel.cloneNode(true);
+  let materiaClone = materiaLabel.cloneNode(true);
+  let ramaClone = ramaBach.cloneNode(true);
   
   
   contenedor.appendChild(selectClone);
