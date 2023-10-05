@@ -11,7 +11,7 @@ selectElement.addEventListener("change", ()=> {
       ramaBach.style.display = selectValue === "bachillerato" ? 'initial' : 'none';
 })
 
-const addNewSubjectButton = document.querySelector("appendSubject");
+const addNewSubjectButton = document.querySelector(".appendSubject");
 addNewSubjectButton.addEventListener("click", ()=> {
  appendNewsElements();
 });
