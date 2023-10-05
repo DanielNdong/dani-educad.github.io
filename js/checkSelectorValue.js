@@ -25,7 +25,7 @@ function appendNewsElements() {
   let sections = document.createElement("div");
                                         
   wrapper.classList.add("otherSubject__wrapper");
-  sections.classList.add("sections);                                    
+  sections.classList.add("sections");                                    
   
   let selectClone = selectLabel.cloneNode(true);
   let cursoClone = cursoLabel.cloneNode(true);
