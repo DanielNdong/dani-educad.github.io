@@ -34,10 +34,10 @@ function appendNewsElements() {
 
   sections.appendChild(selectClone);
   sections.appendChild(cursoClone);
+  sections.appendChild(ramaClone);
   
   wrapper.appendChild(sections);
   wrapper.appendChild(materiaClone);
-  wrapper.appendChild(ramaClone);
 
   containerWrapper.appendChild(wrapper);
 }
