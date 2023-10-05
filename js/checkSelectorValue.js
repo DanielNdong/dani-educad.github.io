@@ -22,7 +22,7 @@ addNewSubjectButton.addEventListener("click", ()=> {
 function appendNewsElements() {
   let containerWrapper = document.querySelector(".otherSubjects");
   let wrapper = document.createElement("div");
-  let sections = document.createElement("div);
+  let sections = document.createElement("div");
                                         
   wrapper.classList.add("otherSubject__wrapper");
   sections.classList.add("sections);                                    
