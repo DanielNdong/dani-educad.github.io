@@ -118,7 +118,7 @@
                                 </label>
                             </div>
                             <div class="sections">
-                                 <label class="lnmax" for"selectNivelAcademico">
+                                 <label class="lnmax labelNivelAcademico" for"selectNivelAcademico">
                                     <span>Nivel Académico</span>
                                     <select class="nivelAcademico" name="selectNivelAcademico" id="selectNivelAcademico">
                                         <option>-- Selecciona tu nivel --</option>
@@ -136,17 +136,19 @@
                                         <option value="tecnologia">Tecnología</option>
                                     </select> 
                                 </label>
-                                <label class="lnmax" for="curso">
+                                <label class="lnmax cursoLabel" for="curso">
                                     <span>Curso</span>
                                     <input type="number" name="curso" id="curso" placeholder="curso" required/>
                                 </label>                                                    
                             </div>
                             <div class="sections">
-                                 <label for="materia">
+                                 <label class="materiaLabel" for="materia">
                                     <span>Materia</span>
                                     <input type="text" name="materia" id="materia" placeholder="Matematicas, Lengua, Economía..." required/>
                                 </label>
-                                <button>
+                            </div>
+                            <section class="otherSubjects"></section>
+                             <button>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                        <path d="M12 5l0 14"></path>
@@ -154,9 +156,6 @@
                                     </svg>
                                     Más materias
                                 </button>
-                            </div>
-                            <section class="otherSubjects"></section>
-                           
                             
                             <div class="form__navigation">
                                 <a href="./createaccount.html#personal" class="prev">Atrás</a>
