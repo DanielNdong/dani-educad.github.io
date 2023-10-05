@@ -120,7 +120,7 @@
                             <div class="sections">
                                  <label class="lnmax labelNivelAcademico" for"selectNivelAcademico">
                                     <span>Nivel Académico</span>
-                                    <select class="nivelAcademico" name="selectNivelAcademico" id="selectNivelAcademico">
+                                    <select class="nivelAcademico" name="selectNivelAcademico[]" id="selectNivelAcademico">
                                         <option>-- Selecciona tu nivel --</option>
                                         <option value="primaria">Primaria</option>
                                         <option value="esba">ESBA</option>
@@ -129,7 +129,7 @@
                                 </label>  
                                 <label class="lnmax ramaBach" for="selectRamaBachillerato">
                                     <span>Rama de Bachillerato</span>
-                                    <select name="selectRamaBachillerato" id="selectRamaBachillerato">
+                                    <select name="selectRamaBachillerato[]" id="selectRamaBachillerato">
                                     <option>-- Selecciona la rama --</option>
                                         <option value="humanidades">Humanidades</option>
                                         <option value="ciencias">Ciencias</option>
@@ -138,13 +138,13 @@
                                 </label>
                                 <label class="lnmax cursoLabel" for="curso">
                                     <span>Curso</span>
-                                    <input type="number" name="curso" id="curso" placeholder="curso" required/>
+                                    <input type="number" name="curso[]" id="curso" placeholder="curso" required/>
                                 </label>                                                    
                             </div>
                             <div class="sections">
                                  <label class="materiaLabel" for="materia">
                                     <span>Materia</span>
-                                    <input type="text" name="materia" id="materia" placeholder="Matematicas, Lengua, Economía..." required/>
+                                    <input type="text" name="materia[]" id="materia" placeholder="Matematicas, Lengua, Economía..." required/>
                                 </label>
                             </div>
                             <section class="otherSubjects"></section>
