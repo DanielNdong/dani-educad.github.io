@@ -3,13 +3,13 @@ const selectElement = document.querySelectorAll(".nivelAcademico");
 const selectLabel = document.querySelector(".labelNivelAcademico");
 const cursoLabel = document.querySelector(".cursoLabel");
 const materiaLabel = document.querySelector(".materiaLabel");
-const ramaBach = document.querySelector(".ramaBach");
+const ramaBach = document.querySelectorAll(".ramaBach");
 
 /* Ocultamos o mostramos el select en caso de que la rama elegida sea 'bachillerato' */
-selectElement.forEach(item=>{
+selectElement.forEach((item, index)=>{
   item.addEventListener("change", ()=> {
-  const selectValue = document.querySelector(".nivelAcademico").value;
-      ramaBach.style.display = selectValue === "bachillerato" ? 'initial' : 'none';
+  const selectValue = item.value;
+      ramaBach[index].style.display = selectValue === "bachillerato" ? 'initial' : 'none';
   })
 })
 
@@ -30,11 +30,11 @@ function appendNewsElements() {
   let selectClone = selectLabel.cloneNode(true);
   let cursoClone = cursoLabel.cloneNode(true);
   let materiaClone = materiaLabel.cloneNode(true);
-  let ramaClone = ramaBach.cloneNode(true);
+  let ramaClone = ramaBach[0].cloneNode(true);
 
   sections.appendChild(selectClone);
-  sections.appendChild(cursoClone);
   sections.appendChild(ramaClone);
+  sections.appendChild(cursoClone);
   
   wrapper.appendChild(sections);
   wrapper.appendChild(materiaClone);
