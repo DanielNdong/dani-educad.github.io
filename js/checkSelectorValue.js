@@ -18,16 +18,19 @@ addNewSubjectButton.addEventListener("click", ()=> {
 
   /* Añadir mas materias que puede impartir el profesor */
 function appendNewsElements() {
-  let contenedor = document.querySelector(".otherSubjects");
+  let containerWrapper = document.querySelector(".otherSubjects");
+  let wrapper = document.createElement("div");
+  wrapper.classList.add("otherSubject__wrapper");
   
   let selectClone = selectLabel.cloneNode(true);
   let cursoClone = cursoLabel.cloneNode(true);
   let materiaClone = materiaLabel.cloneNode(true);
   let ramaClone = ramaBach.cloneNode(true);
-  
-  
-  contenedor.appendChild(selectClone);
-  contenedor.appendChild(cursoClone);
-  contenedor.appendChild(materiaClone);
-  contenedor.appendChild(ramaClone);
+
+  wrapper.appendChild(selectClone);
+  wrapper.appendChild(cursoClone);
+  wrapper.appendChild(materiaClone);
+  wrapper.appendChild(ramaClone);
+
+  containerWrapper.appendChild(wrapper);
 }
