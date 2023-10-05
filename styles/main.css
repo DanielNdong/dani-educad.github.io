@@ -102,6 +102,10 @@ h2 {
   display: none;
 }
 
+button[type=button] {
+  width: 150px;
+}
+
 @media screen and (min-width: 1024px) {
   .lnmax {
     max-width: 140px;
