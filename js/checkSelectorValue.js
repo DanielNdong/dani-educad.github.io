@@ -15,7 +15,7 @@ document.querySelectorAll('.nivelAcademico').forEach((item,index)=>{
         alert("ha cambiado: "+item.value)
 
         
-        document.querySelectorAll('.ramaBach')[index].style.display = selectValue === "bachillerato" ? 'initial' : 'none';
+        document.querySelectorAll('.ramaBach')[index].style.display = this.value === "bachillerato" ? 'initial' : 'none';
     })
 })
 /*
