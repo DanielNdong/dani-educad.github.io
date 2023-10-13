@@ -8,7 +8,8 @@ const ramaBach = document.querySelectorAll(".ramaBach");
 /* Ocultamos o mostramos el select en caso de que la rama elegida sea 'bachillerato' */
 selectElement.forEach((item, index)=>{
   item.addEventListener("change", ()=> {
-  const selectValue = item.value;
+    console.log("se ha cambiado: "+this+" el indice: "+index);
+  const selectValue = this.item.value;
       ramaBach[index].style.display = selectValue === "bachillerato" ? 'initial' : 'none';
   })
 })
