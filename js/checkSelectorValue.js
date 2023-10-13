@@ -6,17 +6,30 @@ const cursoLabel = document.querySelector(".cursoLabel");
 const materiaLabel = document.querySelector(".materiaLabel");
 
 /* Ocultamos o mostramos el select en caso de que la rama elegida sea 'bachillerato' */
-[...selectElement].forEach((item, index)=>{
-  console.log("elemento: "+item.value+" con indice: "+index)
-  item.addEventListener("change", changeDisplayRama(index))
-})
+
 
 /* Cambiar la visualizacion del campo de rama de bachillerato */
-const changeDisplayRama = (index)=>{
+document.querySelectorAll('.nivelAcademico').forEach((item,index)=>{
+    item.addEventListener('change', function(){
+        console.log(this, this.value + " post: "+index)
+        alert("ha cambiado: "+item.value)
+
+        
+        document.querySelectorAll('.ramaBach')[index].style.display = selectValue === "bachillerato" ? 'initial' : 'none';
+    })
+})
+/*
+const changeDisplayRama = function(index){
+     console.log(this, this.value + " post: "+index)
+      alert("ha cambiado: "+item.value)
       selectValue = this.value;
-      [...document.querySelectorAll(".ramaBach")][index].style.display = selectValue === "bachillerato" ? 'initial' : 'none';
+        document.querySelectorAll('.ramaBach')[index].style.display = selectValue === "bachillerato" ? 'initial' : 'none';
 }
 
+selectElement.forEach((item, index)=>{
+  item.addEventListener("change", changeDisplayRama(index))
+})
+*/
                            
 const addNewSubjectButton = document.querySelector(".appendSubject");
 addNewSubjectButton.addEventListener("click", ()=> {
