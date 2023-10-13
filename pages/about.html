@@ -15,63 +15,115 @@
 <body>
     <header class="header">
         <nav class="headerNav container">
-            <!-- Logo de la Empresa -->
-            <div class="header__logo__wrapper">
-                <a href="../index.html">
-                    <img class="header__logo" src="../assets/LOGO EDUCAD.png" alt="Logo de educage">
-                </a>
+          <!-- Logo de la Empresa -->
+          <a href="../index.html">
+          <div class="header__logo__wrapper">
+              <img
+                class="header__logo"
+                src="../assets/LOGO EDUCAD.png"
+                alt="Logo de educage"
+              />
+          </div>
+      </a>
+          <!-- Menu de navegacion -->
+          <ul class="headerNav__ul">
+            <li class="headerNav__link__wrapper">
+              <a class="headerNav__link headerNav__link--active" href="../"
+                >Inicio</a
+              >
+            </li>
+            <li class="headerNav__link__wrapper">
+              <a class="headerNav__link" href="../pages/service.html">Servicios</a>
+            </li>
+            <li class="headerNav__link__wrapper">
+              <a class="headerNav__link" href="../pages/about.html"
+                >Sobre Nosotros</a
+              >
+            </li>
+            <li class="headerNav__link__wrapper">
+              <a class="headerNav__link" href="../pages/contact.html">Contacto</a>
+            </li>
+          </ul>
+          <button class="header__button" aria-label="Ir a Educad">
+            <a href="https://educad-gq.com"> Ir a Educad </a>
+          </button>
+          <div class="header__links">
+            <div class="header__userIcon" aria-label="boton-login">
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#0b2031"
+                  viewBox="0 -960 960 960"
+                >
+                  <path
+                    d="M233.964-253.577q59.806-40.807 118.344-63.23Q410.846-339.23 480-339.23t127.75 22.423q58.596 22.423 119.519 63.23 43.73-50.653 64.769-106.59 21.039-55.937 21.039-119.665 0-140.899-96.173-237.072T480-813.077q-140.731 0-236.904 96.173t-96.173 237.072q0 63.728 21.347 119.665 21.346 55.937 65.694 106.59Zm245.874-204.347q-53.876 0-90.434-36.719-36.557-36.719-36.557-90.595 0-53.877 36.719-90.434 36.719-36.558 90.596-36.558 53.876 0 90.434 36.719 36.557 36.719 36.557 90.596 0 53.876-36.719 90.434-36.719 36.557-90.596 36.557Zm.38 354.846q-77.855 0-146.73-29.725-68.875-29.724-119.931-80.961-51.056-51.237-80.767-119.681-29.712-68.444-29.712-146.725 0-77.775 29.725-146.414 29.724-68.639 80.961-119.777 51.237-51.138 119.681-80.849 68.444-29.712 146.725-29.712 77.775 0 146.414 29.725 68.639 29.724 119.777 80.961 51.138 51.237 80.849 119.82 29.712 68.583 29.712 146.198 0 77.855-29.725 146.73-29.724 68.875-80.961 119.931-51.237 51.056-119.82 80.767-68.583 29.712-146.198 29.712Zm-.26-43.845q55.504 0 109.177-17.577 53.673-17.578 102.404-57.193-48.731-35.231-101.718-54.461-52.988-19.231-109.749-19.231-56.762 0-110.36 18.692-53.597 18.692-100.866 55 48.346 39.615 101.978 57.193 53.631 17.577 109.134 17.577Zm.096-354.846q36.369 0 59.812-23.496 23.442-23.496 23.442-59.865 0-36.37-23.496-59.812-23.496-23.443-59.866-23.443-36.369 0-59.812 23.496-23.442 23.496-23.442 59.866 0 36.369 23.496 59.812 23.496 23.442 59.866 23.442ZM480-585.077Zm0 363.923Z"
+                  />
+                </svg>
+              </button>
             </div>
-            <!-- Menu de navegacion -->
-            <ul class="headerNav__ul">
-                <li class="headerNav__link__wrapper">
-                    <a class="headerNav__link headerNav__link--active" href="../index.html">Inicio</a>
-                </li>
-                <li class="headerNav__link__wrapper">
-                    <a class="headerNav__link" href="../pages/service.html">Servicios</a>
-                </li>
-                <li class="headerNav__link__wrapper">
-                    <a class="headerNav__link" href="../pages/about.html">Sobre Nosotros</a>
-                </li>
-                <li class="headerNav__link__wrapper">
-                    <a class="headerNav__link" href="../pages/contact.html">Contacto</a>
-                </li>
-            </ul>
-            <button class="header__button" aria-label="Ir a Educad">
-                <a href="https://educad-gq.com">
-                    Ir a Educad
-                </a>
+            <button
+              class="hamburger hamburger--squeeze header__menuIcon"
+              id="menu-button"
+              type="button"
+              aria-label="Menu-button"
+            >
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
             </button>
-            <div class="header__links">
-                <div class="header__userIcon" aria-label="boton-login">
-                    <a href="../pages/register.html#personal">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#0b2031" viewBox="0 -960 960 960"><path d="M233.964-253.577q59.806-40.807 118.344-63.23Q410.846-339.23 480-339.23t127.75 22.423q58.596 22.423 119.519 63.23 43.73-50.653 64.769-106.59 21.039-55.937 21.039-119.665 0-140.899-96.173-237.072T480-813.077q-140.731 0-236.904 96.173t-96.173 237.072q0 63.728 21.347 119.665 21.346 55.937 65.694 106.59Zm245.874-204.347q-53.876 0-90.434-36.719-36.557-36.719-36.557-90.595 0-53.877 36.719-90.434 36.719-36.558 90.596-36.558 53.876 0 90.434 36.719 36.557 36.719 36.557 90.596 0 53.876-36.719 90.434-36.719 36.557-90.596 36.557Zm.38 354.846q-77.855 0-146.73-29.725-68.875-29.724-119.931-80.961-51.056-51.237-80.767-119.681-29.712-68.444-29.712-146.725 0-77.775 29.725-146.414 29.724-68.639 80.961-119.777 51.237-51.138 119.681-80.849 68.444-29.712 146.725-29.712 77.775 0 146.414 29.725 68.639 29.724 119.777 80.961 51.138 51.237 80.849 119.82 29.712 68.583 29.712 146.198 0 77.855-29.725 146.73-29.724 68.875-80.961 119.931-51.237 51.056-119.82 80.767-68.583 29.712-146.198 29.712Zm-.26-43.845q55.504 0 109.177-17.577 53.673-17.578 102.404-57.193-48.731-35.231-101.718-54.461-52.988-19.231-109.749-19.231-56.762 0-110.36 18.692-53.597 18.692-100.866 55 48.346 39.615 101.978 57.193 53.631 17.577 109.134 17.577Zm.096-354.846q36.369 0 59.812-23.496 23.442-23.496 23.442-59.865 0-36.37-23.496-59.812-23.496-23.443-59.866-23.443-36.369 0-59.812 23.496-23.442 23.496-23.442 59.866 0 36.369 23.496 59.812 23.496 23.442 59.866 23.442ZM480-585.077Zm0 363.923Z"/></svg>
-                    </a>
-                </div>
-                <button class="hamburger hamburger--squeeze header__menuIcon" id="menu-button" type="button"  aria-label="Menu-button">
-                    <span class="hamburger-box">
-                      <span class="hamburger-inner"></span>
-                    </span>
-                  </button>
+          </div>
+          <!-- El ventana menu -->
+          <div class="menu__header">
+            <ul class="menu__nav">
+              <li class="headerNav__link__wrapper">
+                <a class="headerNav__link" href="../index.html">Inicio</a>
+              </li>
+              <li class="headerNav__link__wrapper">
+                <a class="headerNav__link" href="../pages/service.html"
+                  >Servicios</a
+                >
+              </li>
+              <li class="headerNav__link__wrapper">
+                <a class="headerNav__link" href="../pages/about.html"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li class="headerNav__link__wrapper">
+                <a class="headerNav__link" href="../pages/contact.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+            <div class="menu__header--register">
+              <p>Registrar en la plataforma desde aqui:</p>
+              <a class="createaccount__button" href="../pages/register.html"
+              >Alumno</a
+            > <a class="createaccount__button" href="../pages/createaccount.html"
+            >Profesor</a>
             </div>
-            <!-- El ventana menu -->
-            <div class="menu__header">
-                <ul class="menu__nav">
-                    <li class="headerNav__link__wrapper">
-                        <a class="headerNav__link" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="headerNav__link__wrapper">
-                        <a class="headerNav__link" href="../pages/service.html">Servicios</a>
-                    </li>
-                    <li class="headerNav__link__wrapper">
-                        <a class="headerNav__link" href="../pages/about.html">Sobre nosotros</a>
-                    </li>
-                    <li class="headerNav__link__wrapper">
-                        <a class="headerNav__link" href="../pages/contact.html">Contacto</a> 
-                    </li>
-                </ul>
-            </div>
+          </div>
         </nav>
-    </header>
+      </header>
+      <!-- Custom Element -->
+    <!--   <header-template></header-template> -->
+      <div class="modalStarSession">
+        <div class="modalStarSession--section">
+          <button>X</button>
+        </div>
+          <div>
+            <p>Si ya tienes tienes tu cuenta entonces:</p>
+            <a class="login__button" href="http://educad-gq.com/"
+            >Iniciar sesión</a
+          >
+          </div>
+          <div class="menu__header--register">
+            <p>Tambien puedes crear tu propia cuenta</p>
+            <a class="createaccount__button" href="../pages/register.html"
+            >Alumno</a
+          > o <a class="createaccount__button" href="../pages/createaccount.html"
+          >Profesor</a>
+          </div>
+      </div>
 
     <main>
         <!-- PRESENTATION -->
