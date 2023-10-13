@@ -5,10 +5,12 @@ const selectLabel = document.querySelector(".labelNivelAcademico");
 const cursoLabel = document.querySelector(".cursoLabel");
 const materiaLabel = document.querySelector(".materiaLabel");
 
-/* Ocultamos o mostramos el select en caso de que la rama elegida sea 'bachillerato' */
-
+window.addEventListener("load", () => {
+    checkIfRamaChanged();
+})
 
 /* Cambiar la visualizacion del campo de rama de bachillerato */
+function checkIfRamaChanged(){
 document.querySelectorAll('.nivelAcademico').forEach((item,index)=>{
     item.addEventListener('change', function(){
         console.log(this, this.value + " post: "+index)
@@ -18,6 +20,7 @@ document.querySelectorAll('.nivelAcademico').forEach((item,index)=>{
         document.querySelectorAll('.ramaBach')[index].style.display = this.value === "bachillerato" ? 'initial' : 'none';
     })
 })
+}
 /*
 const changeDisplayRama = function(index){
      console.log(this, this.value + " post: "+index)
@@ -33,7 +36,8 @@ selectElement.forEach((item, index)=>{
                            
 const addNewSubjectButton = document.querySelector(".appendSubject");
 addNewSubjectButton.addEventListener("click", ()=> {
- appendNewsElements();
+    appendNewsElements();
+    checkIfRamaChanged();
 });
 
   /* Añadir mas materias que puede impartir el profesor */
