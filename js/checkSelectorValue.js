@@ -1,4 +1,4 @@
-const selectElement = [... document.querySelectorAll(".nivelAcademico")];
+const selectElement = [...document.querySelectorAll(".nivelAcademico")];
 
 const selectLabel = document.querySelector(".labelNivelAcademico");
 const cursoLabel = document.querySelector(".cursoLabel");
