@@ -1,7 +1,8 @@
+let menuMobil = document.querySelector(".menu__header");
 /* Mostrar y cerrar el menu del header */
 document.querySelector("#menu-button").addEventListener("click", () => {
-    document.querySelector(".menu__header").classList.toggle("show");
-    document.querySelector("#menu-button").classList.toggle("is-active");
+  if(modal.className.includes('active')) modal.classList.remove('active')
+  menuMobil.classList.toggle("show");
 })
 
 
@@ -22,7 +23,6 @@ document.querySelectorAll(".faq__header").forEach(item => {
 
 
 /* Mostrar y cerrar el menu del la infomacion del miembro de equipo "About" */
-
 document.querySelectorAll(".menu__member").forEach((item,index_ele) => {
     item.addEventListener("click", () => {
        /*  if (item.classList.contains("show__member")) return item.classList.remove("show__member")
@@ -89,11 +89,23 @@ scrollInterval = setInterval(automaticScroll, 10000);
 
 
 /* cambiar estilos del header al hacer scroll */
-const header = document.querySelector('.header');
+let header = document.querySelector('header');
 header.addEventListener('scroll', () => {
     console.log("scrolleado")
     if(window.scrollY >= 63) {
         header.style.boxShadow = "3px 5px 11px 0px #0000000";
     }
 
+})
+
+/* Abrir y cerrar el modal */
+let user = document.querySelector('.header__userIcon');
+let modal = document.querySelector('.modalStarSession');
+let buttonHeaderLogin = document.querySelector('.modalStarSession--section > button');
+user.addEventListener('click', ()=> {
+  if(menuMobil.className.includes('show')) menuMobil.classList.remove('show')
+  modal.classList.add('active')
+})
+buttonHeaderLogin.addEventListener('click', ()=> {
+  modal.classList.remove('active')
 })
