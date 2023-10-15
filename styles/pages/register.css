@@ -83,7 +83,6 @@ form#formulario-registro {
     padding: 2rem 0;
     grid-column: 1/2;
     grid-row: 1/2;
-    display: grid;
     align-items: start;
     grid-template-rows: repeat(5, max-content);
     justify-self: center;
