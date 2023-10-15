@@ -218,6 +218,19 @@ form#formulario-registro {
     color: var(--border-color)
 }
 
+    #docente:target.register-link-item::before {
+       border-color: var(--border-color);
+       color: var(--border-color)
+    }
+    #datos-del-centro:target.register-link-item::before {
+       border-color: var(--border-color);
+       color: var(--border-color)
+    }
+    #user-docente:target.register-link-item::before {
+       border-color: var(--border-color);
+       color: var(--border-color)
+    }
+
 .register-link-item a {
     display: block;
     font-size: .5rem;
@@ -399,7 +412,7 @@ form#formulario-registro {
         color: var(--progress-menu-items);
         text-align: start;
     }
-    #personal:target.register-link-item a {
+    #alumno:target.register-link-item a {
         color: #fff;
     }
     #aditional:target.register-link-item a {
@@ -411,8 +424,7 @@ form#formulario-registro {
     #userInfo:target.register-link-item a {
         color: #fff;
     }
-
-
+    
     #personal:target.register-link-item::before {
         border-color: #fff;
         color: #fff;
@@ -426,6 +438,29 @@ form#formulario-registro {
         color: #fff;
     }
     #userInfo:target.register-link-item::before {
+        border-color: #fff;
+        color: #fff;
+    }
+
+    #docente:target.register-link-item a {
+        color: #fff;
+    }
+    #datos-del-centro:target.register-link-item a {
+        color: #fff;
+    }
+    #user-docente:target.register-link-item a {
+        color: #fff;
+    }
+
+    #docente:target.register-link-item::before {
+        border-color: #fff;
+        color: #fff;
+    }
+    #datos-del-centro:target.register-link-item::before {
+        border-color: #fff;
+        color: #fff;
+    }
+    #user-docente:target.register-link-item::before {
         border-color: #fff;
         color: #fff;
     }
