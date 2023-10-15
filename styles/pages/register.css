@@ -67,6 +67,7 @@ form#formulario-registro {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    overflow: hidden;
 }
 
 .register__form__scroll {
@@ -80,17 +81,19 @@ form#formulario-registro {
 .register_section {
     opacity: 0;
     width: var(--form-mobile-width);
-    padding: 2rem 0;
+    padding: .3rem 0;
     grid-column: 1/2;
     grid-row: 1/2;
     align-items: start;
     grid-template-rows: repeat(5, max-content);
     justify-self: center;
     pointer-events: none;
+    max-height: 0;
 }
 .register_section--show {
     opacity: 1;
     pointer-events: unset;
+    max-height: max-content;
 }
 
 .register_section > h2 {
@@ -384,7 +387,6 @@ form#formulario-registro {
     } */
 
     .register_section {
-        padding: 4rem 0;
         margin-left: 4rem;
     }
 
