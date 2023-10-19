@@ -13,10 +13,6 @@ window.addEventListener("load", () => {
 function checkIfRamaChanged(){
 document.querySelectorAll('.nivelAcademico').forEach((item,index)=>{
     item.addEventListener('change', function(){
-        console.log(this, this.value + " post: "+index)
-        alert("ha cambiado: "+item.value)
-
-        
         document.querySelectorAll('.ramaBach')[index].style.display = this.value === "bachillerato" ? 'initial' : 'none';
     })
 })
