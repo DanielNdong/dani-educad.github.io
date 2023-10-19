@@ -138,21 +138,19 @@
                                     <span>Centro de estudios</span>
                                     <input type="text" name="nombreCentro" id="nombreCentro" placeholder="Nombre del centro/FP/Universidad" required/>
                                 </label>
-                                <label for"selectNivelAcademico">
+                                    <label class="lnmax labelNivelAcademico" for"selectNivelAcademico">
                                     <span>Nivel Académico</span>
-                                    <select name="selectNivelAcademico" id="selectNivelAcademico">
+                                    <select class="nivelAcademico" name="selectNivelAcademicos[]" id="selectNivelAcademico">
                                         <option>-- Selecciona tu nivel --</option>
                                         <option value="primaria">Primaria</option>
                                         <option value="esba">ESBA</option>
                                         <option value="bachillerato">Bachillerato</option>
                                     </select>
                                 </label>  
-                            </div>
-                            <div class="sections">
-                                <label for="selectRamaBachillerato">
+                                <label class="lnmax ramaBach" for="selectRamaBachillerato">
                                     <span>Rama de Bachillerato</span>
-                                <select name="selectRamaBachillerato" id="selectRamaBachillerato">
-                                    <option>-- Selecciona tu rama --</option>
+                                    <select name="selectRamaBachilleratos[]" id="selectRamaBachillerato">
+                                    <option>-- Selecciona la rama --</option>
                                         <option value="humanidades">Humanidades</option>
                                         <option value="ciencias">Ciencias</option>
                                         <option value="tecnologia">Tecnología</option>
