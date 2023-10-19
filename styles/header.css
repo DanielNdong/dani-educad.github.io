@@ -83,7 +83,7 @@
   }
   .menu__header.show {
     padding: 35px 0;
-    height: 64vh;
+    height: max-content;
     transition: all .7s ease-out;
 }
 /*   .menu__header::after {
