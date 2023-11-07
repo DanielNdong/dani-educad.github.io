@@ -101,17 +101,19 @@ header.addEventListener('scroll', () => {
 /* Abrir y cerrar el modal */
 let user = document.querySelector('.header__userIcon');
 let modal = document.querySelector('.modalStarSession');
-let gotoEducadButton = [...document.querySelectorAll('button-link')];
+let gotoEducadButton2 = document.querySelector('button-link:nth-child(2)');
+let gotoEducadButton3 = document.querySelector('button-link:nth-child(3)');
 let buttonHeaderLogin = document.querySelector('.modalStarSession--section > button');
 user.addEventListener('click', ()=> {
   if(menuMobil.className.includes('show')) menuMobil.classList.remove('show')
   modal.classList.add('active')
 })
-gotoEducadButton.forEach((item)=>{
-  item.addEventListener('click', ()=> {
+gotoEducadButton2.addEventListener('click', ()=> {
   modal.classList.add('active')
 })
-}
+gotoEducadButton3.addEventListener('click', ()=> {
+  modal.classList.add('active')
+})
 buttonHeaderLogin.addEventListener('click', ()=> {
   modal.classList.remove('active')
 })
