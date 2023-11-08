@@ -150,7 +150,6 @@ class ButtonLinks extends HTMLElement {
             newValue === 'true' ?
                 this.addArrowByAttribute() :
                 this.removeArrowByAttribute();
-                console.log(this.color())
         }
     }
 
