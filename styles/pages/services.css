@@ -1,4 +1,5 @@
 @import url('../main.css');
+@import url('../header.css');
 
 .hero__section__description h2 {
   color: rgb(16, 16, 60)
