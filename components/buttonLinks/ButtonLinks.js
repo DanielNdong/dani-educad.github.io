@@ -83,7 +83,7 @@ template.innerHTML = `
 class ButtonLinks extends HTMLElement {
     constructor() {
         super();
-        this.root = this.attachShadow({ mode: 'closed' })
+        this.root = this.attachShadow({ mode: 'open' })
         let clone = template.content.cloneNode(true);
         this.root.append(clone);
         /* Elements */
