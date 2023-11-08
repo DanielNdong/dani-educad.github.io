@@ -108,10 +108,10 @@ user.addEventListener('click', ()=> {
   if(menuMobil.className.includes('show')) menuMobil.classList.remove('show')
   modal.classList.add('active')
 })
-gotoEducadButton2.addEventListener('click', ()=> {
+gotoEducadButton1.addEventListener('click', ()=> {
   modal.classList.add('active')
 })
-gotoEducadButton3.addEventListener('click', ()=> {
+gotoEducadButton2.addEventListener('click', ()=> {
   modal.classList.add('active')
 })
 buttonHeaderLogin.addEventListener('click', ()=> {
