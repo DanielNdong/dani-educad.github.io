@@ -103,6 +103,7 @@ let user = document.querySelector('.header__userIcon');
 let modal = document.querySelector('.modalStarSession');
 let gotoEducadButton1 = document.querySelector('.target .btn__register--1');
 let gotoEducadButton2 = document.querySelector('.about .btn__register--2');
+let gotoEducadButton3 = document.querySelector('.btn__register--3');
 let buttonHeaderLogin = document.querySelector('.modalStarSession--section > button');
 user.addEventListener('click', ()=> {
   if(menuMobil.className.includes('show')) menuMobil.classList.remove('show')
@@ -112,6 +113,9 @@ gotoEducadButton1.addEventListener('click', ()=> {
   modal.classList.add('active')
 })
 gotoEducadButton2.addEventListener('click', ()=> {
+  modal.classList.add('active')
+})
+gotoEducadButton3.addEventListener('click', ()=> {
   modal.classList.add('active')
 })
 buttonHeaderLogin.addEventListener('click', ()=> {
