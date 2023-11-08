@@ -123,6 +123,36 @@ h2 {
     border-top: solid 2px #bcbcbc;
 }
 
+.btn__register {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    padding: 1rem 3rem;
+    background-color: #ffffff;
+    gap: 10px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 50px;
+    border: solid .4px #0f0d3e;
+    font-size: 20px;
+    font-weight: 300;
+    color: #040224;
+}
+.btn__register:hover {
+    color: #0b2031;
+    background-color: #f6f6f6;
+}
+.btn__register svg {
+    transition: all 0.2s ease-in-out;
+    fill: #fff;
+}
+.btn__register:hover svg {
+    fill: var(--color-white);
+    transform: translateX(15px);
+    transition: all 0.2s ease-in-out;
+}
+
 @media screen and (min-width: 1024px) {
   .lnmax {
     max-width: 190px;
