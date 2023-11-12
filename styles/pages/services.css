@@ -31,7 +31,7 @@
 }
 .joinus button:hover svg {
   fill: #fff;
-  transform: translateX(10px);
+  /* transform: translateX(10px); */
   transition: all 0.2s ease-in-out;
 }
 .joinus__img {
