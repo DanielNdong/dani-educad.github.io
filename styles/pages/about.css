@@ -558,7 +558,7 @@ button.menu__member {
 
     .offer__item {
         width: 310px;
-        height: 450px;
+        /* height: 450px; */
         flex-direction: row;
         align-items: start;
         gap: 8rem;
@@ -584,7 +584,6 @@ button.menu__member {
     }
 
     .offer__content p {
-        height: 150px;
         font-size: 1.1rem;
         font-weight: 300;
         word-spacing: 1;
