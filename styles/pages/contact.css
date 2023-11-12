@@ -309,7 +309,9 @@ textarea {
 
   /* FORM CONTACT */
   .form__contact {
+    width: 66%;
     margin-top:5rem;
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -320,6 +322,10 @@ textarea {
   .form__contact__header h3 {
     font-size: 2.1rem;
     font-weight: 400;
+  }
+
+  .form__contact__wrapper {
+    width: 74%
   }
 
   .form__contact .form__contact__wrapper p {
@@ -366,7 +372,7 @@ textarea {
     margin-top: 0;
     width: 30%;
     max-width: 320px;
-    gap: 5px;
+    gap: 16px;
   }
   .company__data__contact > p {
     text-transform: uppercase;
@@ -376,7 +382,7 @@ textarea {
     font-weight: 500;
   }
   .company__data__contact .icons-wrapper {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
     display: block;
   }
   .company__data__contact .icons-wrapper a {
@@ -387,6 +393,7 @@ textarea {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    font-size: .9rem;
   }
   .company__data__contact .company__item {
     display: flex;
@@ -409,7 +416,7 @@ textarea {
   /* CONTACT EXTRA */
   .contact__extra {
     display: flex;
-    margin: 5rem 0 1rem;
+    margin: 2rem 0 1rem;
     column-gap: 30px;
     background-color: #b9cbe242;
     padding: 5rem 0;
@@ -419,10 +426,10 @@ textarea {
     outline: solid .3px gray;
     display: flex;
     flex-direction: column;
-    row-gap: 25px;
+    row-gap: 12px;
     align-items: center;
-    max-width: 500px;
-    padding: 4rem;
+    max-width: 400px;
+    padding: 2rem 4rem;
     border-radius: 3px;
     background-color: #fff;
   }
@@ -431,6 +438,9 @@ textarea {
   }
   .contact__extra .contact__extra__item  h3, .contact__extra .contact__extra__item div {
     text-align: center;
+  }
+  .contact__extra .contact__extra__item  h3{
+    margin: 1rem 0 2rem
   }
   .contact__extra .contact__extra__item  a {
     display: block;
