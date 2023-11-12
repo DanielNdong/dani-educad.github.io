@@ -30,7 +30,7 @@
   fill: #fff;
 }
 .joinus button:hover svg {
-  fill: var(--color-blue);
+  fill: #fff;
   transform: translateX(10px);
   transition: all 0.2s ease-in-out;
 }
