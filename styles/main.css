@@ -147,7 +147,7 @@ h2 {
     transition: all 0.2s ease-in-out;
     fill: #fff;
 }
-.btn__register:hover svg {
+.btn__register:active svg {
     fill: var(--color-white);
     transform: translateX(15px);
     transition: all 0.2s ease-in-out;
