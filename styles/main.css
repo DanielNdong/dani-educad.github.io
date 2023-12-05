@@ -153,7 +153,7 @@ h2 {
     transition: all 0.2s ease-in-out;
 }
 
-/* Boton de whatsapp de la pagina de registro de alumnos y profesores  */
+/* Boton de whatsapp de la pagina de registro de alumnos y profesores.  */
 .btn__whatsapp {
   width: fit-content;
   margin: 1rem 0 0;

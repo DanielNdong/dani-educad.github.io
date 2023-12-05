@@ -332,12 +332,6 @@ form#formulario-registro {
 }
 
 
-/* @media screen and (min-width: 414) {
-    .register__form__scroll {
-        width: 1656px
-    }
-} */
-
 @media screen and (min-width: 767px) {
 
     .sections {
