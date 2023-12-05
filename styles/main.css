@@ -160,13 +160,13 @@ h2 {
 }
 .btn__whatsapp svg {
   display: block;
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
   fill: green;
 }
 .btn__whatsapp a {
     display: flex;
-    background-color: #7bc77b;
+    background-color: #7ace7a;
     color: #fff;
     border-radius: 20px;
     padding: .2rem .8rem;

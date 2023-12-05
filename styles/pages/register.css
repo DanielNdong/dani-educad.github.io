@@ -297,6 +297,39 @@ form#formulario-registro {
     transition: all .2s ease-in-out;
 }
 
+.btn__whatsapp {
+    padding: 15px 0;
+    border-top: solid 1px rgb(202, 202, 202);
+    border-bottom: solid 1px rgb(202, 202, 202);
+}
+
+.btn__whatsapp a {
+    width: 200px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.btn__whatsapp span {
+    padding: 10px 0;
+    font-size: 14px !important;
+    font-weight: 500;
+
+}
+
+.sms__wht__one{
+        font-size: 14px;
+    color: #0a0a0a;
+    margin: 0 0 .5rem;
+    font-weight: 500;
+}
+.sms__wht__two{
+        font-size: 14px;
+    color: #3a3a3a;
+    margin: 0 0 1.5rem;
+}
 
 
 /* @media screen and (min-width: 414) {
