@@ -304,19 +304,24 @@ form#formulario-registro {
 }
 
 .btn__whatsapp a {
-    width: 200px;
+    width: 158px;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 6px;
+    padding: 5px 5px;
 }
 
 .btn__whatsapp span {
-    padding: 10px 0;
     font-size: 14px !important;
     font-weight: 500;
+}
 
+.btn__whatsapp p {
+    font-size: 14px;
+    color: #3a3a3a;
+    margin: 0 0 1.5rem;
 }
 
 .sms__wht__one{
@@ -332,6 +337,7 @@ form#formulario-registro {
 }
 
 
+
 @media screen and (min-width: 767px) {
 
     .sections {
@@ -345,6 +351,17 @@ form#formulario-registro {
     .progress__menu ul {
         gap: 40px;
     }
+
+    .btn__whatsapp span {
+    padding: 10px 0;
+    font-size: 14px !important;
+    font-weight: 500;
+}
+
+    .btn__whatsapp a {
+    width: 200px;
+    padding: 0;
+}
 }
 @media screen and (min-width: 1024px) {
     .sections {
