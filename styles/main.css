@@ -164,7 +164,7 @@ h2 {
   height: 24px;
   fill: green;
 }
-.btn__whatsapp a {
+.btn__whatsapp {
     display: flex;
     background-color: #7ace7a;
     color: #fff;
