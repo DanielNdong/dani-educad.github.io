@@ -297,13 +297,13 @@ form#formulario-registro {
     transition: all .2s ease-in-out;
 }
 
-.goto__whatsapp {
+.goto__whatsapp__section {
     padding: 15px 0;
     border-top: solid 1px rgb(202, 202, 202);
     border-bottom: solid 1px rgb(202, 202, 202);
 }
 
-.btn__whatsapp__section a {
+.btn__whatsapp {
     margin-top: 1rem;
     width: 158px;
     text-decoration: none;
@@ -319,7 +319,7 @@ form#formulario-registro {
     font-weight: 500;
 }
 
-.btn__whatsapp__section p {
+.goto__whatsapp__section p {
     font-size: 14px;
     color: #3a3a3a;
     margin: 0 0 .5rem;
@@ -360,7 +360,7 @@ form#formulario-registro {
     font-weight: 500;
 }
 
-    .btn__whatsapp a {
+    .btn__whatsapp{
     width: 200px;
     padding: 0;
 }
